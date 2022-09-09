@@ -1,4 +1,7 @@
-
+//I don't know why, but Harkyon's feet ignore the damage buffs from titles. Why do you do this KoG?
+function title_warn(){
+    window.alert("Nota: As pastas do Harkyon ignoram o buff de dano do título\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'buffs'.")
+}
 
 //Default values
 var ATK_factor = 0.0168
@@ -71,7 +74,6 @@ function calculate() {
     } else if (enemy==='14'){
         DEF = 0.86
         sDEF = 0.88
-        window.alert("Nota: As pastas do Harkyon ignoram o buff de dano do título\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'buffs'.")
     }
 
 
