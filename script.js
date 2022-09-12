@@ -177,7 +177,11 @@ function calculate() {
         }
         //Harrier World debuff and adjustments
         if (harrier_debuff>0){  
-            final_dmg = final_dmg*(1 - harrier_debuff/100 + harrier_resist/100)
+            var harrier_final = (harrier_debuff-harrier_resist)/100
+            if (harrier_final<0){
+                harrier_final = 0                
+            }
+            final_dmg = final_dmg*(1 - harrier_final)
             crit_d -= 250
             crit_r -= 20
             if (crit_d < -50) {
@@ -186,17 +190,15 @@ function calculate() {
             if (crit_r < 0) {
                 crit_r = 0
             }
+            if (1 - harrier_debuff/100 + harrier_resist/100<0){
+                final_dmg = 0
+            }
         }
         if (crit_r>100){
             crit_r = 100
         }
-        if (1 - harrier_debuff/100 + harrier_resist/100<0){
-            final_dmg = 0
-        }
         
-        //Note to self: add a check for specif enemy + harrier debuff and add "there is no harrier debuff for that enemy"
         //Presentation of results
-
         var avgCritDmg = Math.round((final_dmg * (crit_r / 100) * (1.5 + (crit_d / 100)) + final_dmg * (1 - (crit_r / 100))))
         damage.innerHTML = `<br>Dano do hit normal: ${Math.round(final_dmg)}`
         damage.innerHTML += `<br>Dano do hit crítico: ${Math.round(final_dmg*(1.50+crit_d/100))}`
