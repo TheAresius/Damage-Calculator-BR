@@ -1,7 +1,7 @@
 //I don't know why, but Harkyon's feet ignore the damage buffs from titles. Why do you do this KoG?
 function title_warn(value){
     if (value=="14"){
-    window.alert("Nota: As pastas do Harkyon ignoram o buff de dano do título\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'buffs'.")
+    window.alert("Nota: As pastas do Harkyon ignoram o buff de dano do título.\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'buffs'.")
     }
 }
 //Default values
@@ -79,7 +79,9 @@ function calculate() {
 
 
     //Check for user input errors
-    if (yourLV < 1 || yourLV >85 ||Number.isInteger(yourLV)==false ||monsterLV < 1 || monsterLV > 150 ||Number.isInteger(monsterLV)==false|| ATK < 0 || sATK < 0 || Number.isInteger(ATK)==false||Number.isInteger(sATK)==false||crit_r < 0 || crit_r > 117.1316 || crit_d < 0 || skill_multi <= 0 || harrier_debuff < 0 || buffs < 0) {
+    if (yourLV < 1 || yourLV >85 ||Number.isInteger(yourLV)==false ||monsterLV < 1 || monsterLV > 150 ||Number.isInteger(monsterLV)==false|| +
+        ATK < 0 || sATK < 0 || Number.isInteger(ATK)==false||Number.isInteger(sATK)==false||crit_r < 0 || crit_r > 117.1316 || +
+        isNaN(crit_r)==true||crit_d < 0 || isNaN(crit_d)==true||skill_multi <= 0 || harrier_debuff < 0 || buffs < 0) {
         window.alert('Algo de errado não está certo. Reveja os valores inseridos.')
         if (yourLV <1 || yourLV >85 || typeof yourLV === 'string'||Number.isInteger(yourLV)==false) {
             document.getElementById("yourLV_string").style.borderColor = "red"
@@ -97,11 +99,11 @@ function calculate() {
             document.getElementById("sATK_string").style.borderColor= "red"
             document.getElementById("sATK_string").style.borderWidth ="2px"
         }
-        if (crit_r<0 || crit_r > 117.1316 || typeof crit_r === 'string') {
+        if (crit_r<0 || crit_r > 117.1316 || typeof crit_r === 'string'||isNaN(crit_r)==true) {
             document.getElementById("crit_r_string").style.borderColor= "red"
             document.getElementById("crit_r_string").style.borderWidth ="2px"
         }
-        if (crit_d<0 || typeof crit_d === 'string') {
+        if (crit_d<0 || typeof crit_d === 'string'||isNaN(crit_d)==true) {
             document.getElementById("crit_d_string").style.borderColor= "red"
             document.getElementById("crit_d_string").style.borderWidth ="2px"
         }
@@ -149,14 +151,6 @@ function calculate() {
         } else {
             var valid_lv_dif = yourLV - monsterLV-5
         }
-       
-        if (harrier_debuff >0 && enemy!='0'){
-            window.alert("There is no Harrier Debuff for that enemy. Review the entered values.")
-            document.getElementById("harrier_d_string").style.borderColor= "red"
-            document.getElementById("harrier_d_string").style.borderWidth ="2px"
-            
-        }
-
 
         //Selection of damage type and does some math
         if (document.getElementById('Normal').checked) {
