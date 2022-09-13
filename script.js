@@ -79,47 +79,54 @@ function calculate() {
 
 
     //Check for user input errors
-    if (yourLV < 1 || yourLV >85 ||Number.isInteger(yourLV)==false ||monsterLV < 1 || monsterLV > 150 ||Number.isInteger(monsterLV)==false|| +
-        ATK < 0 || sATK < 0 || Number.isInteger(ATK)==false||Number.isInteger(sATK)==false||crit_r < 0 || crit_r > 117.1316 || +
-        isNaN(crit_r)==true||crit_d < 0 || isNaN(crit_d)==true||skill_multi <= 0 || harrier_debuff < 0 || buffs < 0) {
+    if (yourLV < 1 || yourLV >85 || Number.isInteger(yourLV)==false ||isNaN(yourLV)==true || +
+        monsterLV < 1 || monsterLV > 150 ||Number.isInteger(monsterLV)==false || isNaN(monsterLV)==true|| +
+        ATK < 0 || Number.isInteger(ATK)==false || isNaN(ATK)==true || +
+        sATK < 0 || Number.isInteger(sATK)==false || isNaN(sATK)==true|| +
+        crit_r < 0 || crit_r > 117.1316 || isNaN(crit_r)==true || +
+        crit_d < 0 || isNaN(crit_d)==true || +
+        harrier_debuff < 0 || isNaN(harrier_debuff)==true || +
+        harrier_resist < 0 || isNaN(harrier_resist)==true || + 
+        buffs < 0|| isNaN(buffs)==true ||+
+        skill_multi < 0 ||isNaN(skill_multi)==true) {
         window.alert('Algo de errado não está certo. Reveja os valores inseridos.')
-        if (yourLV <1 || yourLV >85 || typeof yourLV === 'string'||Number.isInteger(yourLV)==false) {
+        if (yourLV < 1 || yourLV >85 || Number.isInteger(yourLV)==false ||isNaN(yourLV)==true) {
             document.getElementById("yourLV_string").style.borderColor = "red"
             document.getElementById("yourLV_string").style.borderWidth ="2px"
         }
-        if (monsterLV< 1 || monsterLV > 150 || typeof monsterLV === 'string'||Number.isInteger(monsterLV)==false) {
+        if (monsterLV < 1 || monsterLV > 150 ||Number.isInteger(monsterLV)==false || isNaN(monsterLV)==true) {
             document.getElementById("monsterLV_string").style.borderColor= "red"
             document.getElementById("monsterLV_string").style.borderWidth ="2px"
         }
-        if (ATK<=0 || typeof ATK === 'string') {
+        if (ATK < 0 || Number.isInteger(ATK)==false || isNaN(ATK)==true) {
             document.getElementById("ATK_string").style.borderColor= "red"
             document.getElementById("ATK_string").style.borderWidth ="2px"
         }
-        if (sATK<0 || typeof sATK === 'string') {
+        if (sATK < 0 || Number.isInteger(sATK)==false || isNaN(sATK)==true) {
             document.getElementById("sATK_string").style.borderColor= "red"
             document.getElementById("sATK_string").style.borderWidth ="2px"
         }
-        if (crit_r<0 || crit_r > 117.1316 || typeof crit_r === 'string'||isNaN(crit_r)==true) {
+        if (crit_r < 0 || crit_r > 117.1316 || isNaN(crit_r)==true) {
             document.getElementById("crit_r_string").style.borderColor= "red"
             document.getElementById("crit_r_string").style.borderWidth ="2px"
         }
-        if (crit_d<0 || typeof crit_d === 'string'||isNaN(crit_d)==true) {
+        if (crit_d < 0 || isNaN(crit_d)==true) {
             document.getElementById("crit_d_string").style.borderColor= "red"
             document.getElementById("crit_d_string").style.borderWidth ="2px"
         }
-        if (harrier_debuff<0 || typeof harrier_debuff === 'string'){
+        if (harrier_debuff < 0 || isNaN(harrier_debuff)==true){
             document.getElementById("harrier_d_string").style.borderColor= "red"
             document.getElementById("harrier_d_string").style.borderWidth ="2px"
         } 
-        if (harrier_resist<0 || typeof harrier_resist === 'string'){
+        if (harrier_resist < 0 || isNaN(harrier_resist)==true){
             document.getElementById("harrier_r_string").style.borderColor= "red"
             document.getElementById("harrier_r_string").style.borderWidth ="2px"
         }
-        if (buffs <0 || typeof buffs ==='string'){
+        if (buffs < 0|| isNaN(buffs)==true){
             document.getElementById("buffs_string").style.borderColor= "red"
             document.getElementById("buffs_string").style.borderWidth="2px"
         }
-        if (skill_multi <= 0 || typeof skill_multi === 'string') {
+        if (skill_multi < 0 ||isNaN(skill_multi)==true) {
             document.getElementById("skill_multi_string").style.borderColor= "red"
             document.getElementById("skill_multi_string").style.borderWidth="2px"
         }
