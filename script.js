@@ -269,10 +269,12 @@ function calculate() {
       final_dmg * (crit_r / 100) * (1.5 + crit_d / 100) +
         final_dmg * (1 - crit_r / 100)
     );
-    damage.innerHTML = `<br>Dano do hit normal: ${Math.round(final_dmg)}`;
-    damage.innerHTML += `<br>Dano do hit crítico: ${Math.round(
+    damage.innerHTML = `<br>Dano do hit normal: <font color='yellow'>${Math.round(
+      final_dmg
+    )}</font>`;
+    damage.innerHTML += `<br>Dano do hit crítico: <font color='yellow'>${Math.round(
       final_dmg * (1.5 + crit_d / 100)
-    )}`;
-    damage.innerHTML += `<br>Dano médio: ${avgCritDmg}`;
+    )}</font>`;
+    damage.innerHTML += `<br>Dano médio: <font color='yellow'>${avgCritDmg}</font>`;
   }
 }
