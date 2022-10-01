@@ -94,6 +94,9 @@ function calculate() {
   } else if (enemy === "14") {
     DEF = 0.86;
     sDEF = 0.88;
+  } else if (enemy === "15") {
+    DEF = 0.6;
+    sDEF = 0.4;
   }
 
   //Check for user input errors
