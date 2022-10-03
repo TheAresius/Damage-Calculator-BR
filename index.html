@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Dano - Grand Chase</title>
     <link rel="stylesheet" href="style.css" />
+
+    <script src="strings.js"></script>
+    <script src="ui.js"></script>
+    <script src="historyList.js"></script>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -145,55 +149,63 @@
         <!--Results will show up here-->
       </div>
 
-      <div id="end">
-        <p id="comment1">
-          Calcularadora feita por Aresius. Para feedback, reporte de bugs,
-          sugestões, discussão de dados etc você pode me encontrar no Discord:
-          <span id="me">Aresius#4407</span>.
-        </p>
-        <p id="comment2">
-          Um agradecimento aos jogadores DsinC e 이빛나 que ajudaram a criar a Tabela de Dano para PvE.
-        </p> 
-        <p id="comment3">
-          Veja essa
-          <a
-            class="one"
-            href="https://docs.google.com/spreadsheets/d/1FGxKHQuwz_Jx-GdYd6647FiAE9UbS6mZgufXor9_DZk/edit#gid=722314000"
-            target="_blank"
-            rel="noopener noreferrer"
-            >tabela</a
-          >
-          com todos os valores de danos de skills, pets e combos. </br> Veja essa
-          <a
-            class="one"
-            href="https://docs.google.com/spreadsheets/d/1NtqqP0HSxeaOF2NAO9tQfFL8sahFGNmxK4HACT19eqA/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            >tabela</a
-          >
-          com todos os Buffs de dano e outras informações.</br>Veja esse
-          <a
-            class="one"
-            href="https://youtu.be/X0lOQGllrN4?t=61"
-            target="_blank"
-            rel="noopener noreferrer"
-            >vídeo</a
-          >
-          para uma explicação detalhada da calculadora.
-        </p>
+      <div id="divider"></div>
+
+      <div id="resultList">
+        <!--Results will show up here-->
       </div>
     </section>
+    <div id="end">
+      <p id="comment1">
+        Calculadora feita por Aresius. Para feedback, reporte de bugs,
+        sugestões, discussão de dados etc você pode me encontrar no Discord:
+        <span id="me">Aresius#4407</span>.
+      </p>
+      <p id="comment2">
+        Um agradecimento aos jogadores DsinC e 이빛나 que ajudaram a criar a Tabela de Dano para PvE.
+      </p>
+      <p id="comment3">
+        Veja essa
+        <a
+          class="one"
+          href="https://docs.google.com/spreadsheets/d/1FGxKHQuwz_Jx-GdYd6647FiAE9UbS6mZgufXor9_DZk/edit#gid=722314000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >tabela</a
+        >
+        com todos os valores de danos de skills, pets e combos. </br> Veja essa
+        <a
+          class="one"
+          href="https://docs.google.com/spreadsheets/d/1NtqqP0HSxeaOF2NAO9tQfFL8sahFGNmxK4HACT19eqA/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >tabela</a
+        >
+        com todos os Buffs de dano e outras informações.</br>Veja esse
+        <a
+          class="one"
+          href="https://youtu.be/8o76AcSpQPI?t=61"
+          target="_blank"
+          rel="noopener noreferrer"
+          >vídeo</a
+        >
+        para uma explicação detalhada da calculadora.
+      </p>
+    </div>
   </body>
-  <div id="update"><br />Última atualização: 01 de Outubro de 2022.</div>
-  <div id="flags">
-    Translations:
-    <span id="br"
-      ><a
-        class="two"
-        href="https://thearesius.github.io/Damage-Calculator-EN/"
-        rel="noopener noreferrer"
-      >
-        <img id="br" src="./images/usa.png" alt="brazil" /> </a
-    ></span>
-  </div>
+  <footer>
+    <div id="update">Última atualização: 01 de Outubro de 2022.</div>
+    <div id="flags">
+      Translations:
+      <span id="br">
+        <a
+          class="two"
+          href="https://thearesius.github.io/Damage-Calculator-EN/"
+          rel="noopener noreferrer"
+        >
+          <img id="br" src="./images/usa.png" alt="brazil" />
+        </a>
+      </span>
+    </div>
+  </footer>
 </html>
