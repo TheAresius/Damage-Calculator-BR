@@ -1,9 +1,7 @@
 //I don't know why, but Harkyon's feet ignore the damage buffs from titles. Why do you do this KoG?
 function title_warn(value) {
   if (value == "14") {
-    window.alert(
-      "Nota: As pastas do Harkyon ignoram o buff de dano do título.\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'buffs'."
-    );
+    window.alert(stringsAlertHarkyon);
   }
 }
 //Default values
@@ -45,21 +43,11 @@ function calculate() {
   skill_multi = Number(skill_multi.replace(/,/g, "."));
 
   //Setup for possible user input errors
-  document.getElementById("yourLV_string").style.borderColor = "transparent";
-  document.getElementById("monsterLV_string").style.borderColor = "transparent";
-  document.getElementById("ATK_string").style.borderColor = "transparent";
-  document.getElementById("sATK_string").style.borderColor = "transparent";
-  document.getElementById("crit_r_string").style.borderColor = "transparent";
-  document.getElementById("crit_d_string").style.borderColor = "transparent";
-  document.getElementById("harrier_d_string").style.borderColor = "transparent";
-  document.getElementById("harrier_r_string").style.borderColor = "transparent";
-  document.getElementById("buffs_string").style.borderColor = "transparent";
-  document.getElementById("skill_multi_string").style.borderColor =
-    "transparent";
-  document.getElementById("Enemy_list").style.borderColor = "transparent";
+  setInputBorderTransparent();
 
   //Specific enemy selection
-  var enemy = document.getElementById("Enemy_list").value;
+  var enemyElement = document.getElementById("Enemy_list");
+  var enemy = enemyElement.value;
   if (enemy != "0") {
     yourLV = 85;
     monsterLV = 85;
@@ -129,15 +117,16 @@ function calculate() {
     +skill_multi < 0 ||
     isNaN(skill_multi) == true
   ) {
-    window.alert("Algo de errado não está certo. Reveja os valores inseridos.");
+    
+    window.alert(stringsErrorInvalidData);
+
     if (
       yourLV < 1 ||
       yourLV > 85 ||
       Number.isInteger(yourLV) == false ||
       isNaN(yourLV) == true
     ) {
-      document.getElementById("yourLV_string").style.borderColor = "red";
-      document.getElementById("yourLV_string").style.borderWidth = "2px";
+      setErrorOnInputById("yourLV_string");
     }
     if (
       monsterLV < 1 ||
@@ -145,62 +134,40 @@ function calculate() {
       Number.isInteger(monsterLV) == false ||
       isNaN(monsterLV) == true
     ) {
-      document.getElementById("monsterLV_string").style.borderColor = "red";
-      document.getElementById("monsterLV_string").style.borderWidth = "2px";
+      setErrorOnInputById("monsterLV_string");
     }
     if (ATK < 0 || Number.isInteger(ATK) == false || isNaN(ATK) == true) {
-      document.getElementById("ATK_string").style.borderColor = "red";
-      document.getElementById("ATK_string").style.borderWidth = "2px";
+      setErrorOnInputById("ATK_string");
     }
     if (sATK < 0 || Number.isInteger(sATK) == false || isNaN(sATK) == true) {
-      document.getElementById("sATK_string").style.borderColor = "red";
-      document.getElementById("sATK_string").style.borderWidth = "2px";
+      setErrorOnInputById("sATK_string");
     }
     if (crit_r < 0 || crit_r > 117.1316 || isNaN(crit_r) == true) {
-      document.getElementById("crit_r_string").style.borderColor = "red";
-      document.getElementById("crit_r_string").style.borderWidth = "2px";
+      setErrorOnInputById("crit_r_string");
     }
     if (crit_d < 0 || isNaN(crit_d) == true) {
-      document.getElementById("crit_d_string").style.borderColor = "red";
-      document.getElementById("crit_d_string").style.borderWidth = "2px";
+      setErrorOnInputById("crit_d_string");
     }
     if (harrier_debuff < 0 || isNaN(harrier_debuff) == true) {
-      document.getElementById("harrier_d_string").style.borderColor = "red";
-      document.getElementById("harrier_d_string").style.borderWidth = "2px";
+      setErrorOnInputById("harrier_d_string");
     }
     if (harrier_resist < 0 || isNaN(harrier_resist) == true) {
-      document.getElementById("harrier_r_string").style.borderColor = "red";
-      document.getElementById("harrier_r_string").style.borderWidth = "2px";
+      setErrorOnInputById("harrier_r_string");
     }
     if (buffs < 0 || isNaN(buffs) == true) {
-      document.getElementById("buffs_string").style.borderColor = "red";
-      document.getElementById("buffs_string").style.borderWidth = "2px";
+      setErrorOnInputById("buffs_string");
     }
     if (skill_multi < 0 || isNaN(skill_multi) == true) {
-      document.getElementById("skill_multi_string").style.borderColor = "red";
-      document.getElementById("skill_multi_string").style.borderWidth = "2px";
+      setErrorOnInputById("skill_multi_string");
     }
   } else if (harrier_debuff > 0 && enemy != "0") {
-    window.alert(
-      "Você não pode aplicar o Debuff de Harrier neste monstro em específico. Reveja os valores inseridos."
-    );
-    document.getElementById("harrier_d_string").style.borderColor = "red";
-    document.getElementById("harrier_d_string").style.borderWidth = "2px";
-    document.getElementById("Enemy_list").style.borderColor = "red";
-    document.getElementById("Enemy_list").style.borderWidth = "2px";
+    window.alert(stringsErrorHarrier);
+
+    setErrorOnInputById("harrier_d_string");
+    setErrorOnInputById("Enemy_list");
   } else {
     //Removes the red borders and procedes with the calculation
-    document.getElementById("yourLV_string").style.borderWidth = "1px";
-    document.getElementById("monsterLV_string").style.borderWidth = "1px";
-    document.getElementById("ATK_string").style.borderWidth = "1px";
-    document.getElementById("sATK_string").style.borderWidth = "1px";
-    document.getElementById("crit_r_string").style.borderWidth = "1px";
-    document.getElementById("crit_d_string").style.borderWidth = "1px";
-    document.getElementById("harrier_d_string").style.borderWidth = "1px";
-    document.getElementById("harrier_r_string").style.borderWidth = "1px";
-    document.getElementById("buffs_string").style.borderWidth = "1px";
-    document.getElementById("skill_multi_string").style.borderWidth = "1px";
-    document.getElementById("Enemy_list").style.borderWidth = "1px";
+    removeRedBorders();
 
     var buff_multi = 1 + buffs / 100;
 
@@ -211,8 +178,15 @@ function calculate() {
       var valid_lv_dif = yourLV - monsterLV - 5;
     }
 
+    var isNormalChecked = document.getElementById("Normal").checked;
+    var isSpecialChecked = document.getElementById("Special").checked;
+    var isPetChecked = document.getElementById("Pet").checked;
+
+    var calculationType = "";
+
     //Selection of damage type and does some math
-    if (document.getElementById("Normal").checked) {
+    if (isNormalChecked) {
+      calculationType = stringsComboDamage;
       var effecttive_ATK = ATK;
       var final_dmg =
         ((effecttive_ATK *
@@ -222,7 +196,8 @@ function calculate() {
           (100 + 2 * valid_lv_dif)) /
           100) *
         buff_multi;
-    } else if (document.getElementById("Special").checked) {
+    } else if (isSpecialChecked) {
+      calculationType = stringsSkillDamage;
       var effecttive_ATK = ATK + sATK;
       var final_dmg =
         ((effecttive_ATK *
@@ -232,7 +207,8 @@ function calculate() {
           (100 + 2 * valid_lv_dif)) /
           100) *
         buff_multi;
-    } else if (document.getElementById("Pet").checked) {
+    } else if (isPetChecked) {
+      calculationType = stringsPetDamage;
       var effecttive_ATK = ATK;
       var final_dmg =
         ((effecttive_ATK *
@@ -272,12 +248,33 @@ function calculate() {
       final_dmg * (crit_r / 100) * (1.5 + crit_d / 100) +
         final_dmg * (1 - crit_r / 100)
     );
-    damage.innerHTML = `<br>Dano do hit normal: <font color='yellow'>${Math.round(
-      final_dmg
-    )}</font>`;
-    damage.innerHTML += `<br>Dano do hit crítico: <font color='yellow'>${Math.round(
-      final_dmg * (1.5 + crit_d / 100)
-    )}</font>`;
-    damage.innerHTML += `<br>Dano médio: <font color='yellow'>${avgCritDmg}</font>`;
+
+    var ui_final_dmg = Math.round(final_dmg);
+    var ui_corrected_final_dmg = Math.round(final_dmg * (1.5 + crit_d / 100));
+
+    showResultOnUi(ui_final_dmg, ui_corrected_final_dmg, avgCritDmg);
+
+    // get selected option string text
+    var enemySelectedElement = enemyElement.options[
+      enemyElement.selectedIndex
+    ].innerHTML;
+
+    updateCalculationResultList({
+      yourLV,
+      monsterLV, 
+      ATK,
+      sATK,
+      crit_r,
+      crit_d, 
+      harrier_debuff, 
+      harrier_resist,
+      buffs, 
+      skill_multi, 
+      ui_final_dmg,
+      ui_corrected_final_dmg,
+      avgCritDmg,
+      calculationType,
+      enemySelectedElement
+    });
   }
 }
