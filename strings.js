@@ -1,7 +1,7 @@
 // file to make translation easier
 
 const stringsAlertHarkyon =
-  "Nota: As pastas do Harkyon ignoram o buff de dano do título.\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'Buffs'.";
+  "Nota: O Harkyon ignora o buff de dano do título.\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'Buffs'.";
 const stringsErrorInvalidData =
   "Algo de errado não está certo. Reveja os valores inseridos.";
 const stringsErrorHarrier =
