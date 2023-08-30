@@ -74,16 +74,16 @@ function showResponsesOnUI() {
               </span>
             </div>
 
+            <div style="line-height:50%;">
+            <br>
+            </div>
+
             <div class="response-list-item-value">
               ${stringsHistoryListHarrierDebuff}:
               <span>
                 ${response.harrier_debuff}%
               </span>
             </div>
-
-          </div>
-
-          <div>
 
             <div class="response-list-item-value">
               ${stringsHistoryListHarrierResistance}:
@@ -93,9 +93,20 @@ function showResponsesOnUI() {
             </div>
 
             <div class="response-list-item-value">
-              ${stringsHistoryListBuffs}:
+            ${stringsHistoryListBuffs}:
+            <span>
+              ${response.buffs}%
+            </span>
+          </div>
+
+          </div>
+
+          <div>
+          
+            <div class="response-list-item-value">
+              ${stringsHistoryListBAtk}:
               <span>
-                ${response.buffs}%
+                ${response.b_atk}%
               </span>
             </div>
 
@@ -106,24 +117,53 @@ function showResponsesOnUI() {
               </span>
             </div>
 
+            <div style="line-height:94%;">
+            <br>
+            </div>
+
             <div class="response-list-item-value">
-              ${stringsNormalHitDamage}: 
+              ${stringsNormalHitDamage+" (frente)"}: 
               <span class="yellow">
                 ${response.ui_final_dmg}
               </span>
             </div>
 
             <div class="response-list-item-value">
-              ${stringsCriticalHitDamage}: 
+              ${stringsCriticalHitDamage+" (frente)"}: 
               <span class="yellow">
                 ${response.ui_corrected_final_dmg}
               </span>
             </div>
 
             <div class="response-list-item-value">
-              ${stringsAverageDamage}: 
+              ${stringsAverageDamage+" (frente)"}: 
               <span class="yellow">
                 ${response.avgCritDmg}
+              </span>
+            </div>
+
+            <div style="line-height:50%;">
+            <br>
+            </div>
+            
+            <div class="response-list-item-value">
+              ${stringsNormalHitDamage+" (costas)"}: 
+              <span class="yellow">
+                ${response.ui_back_normal}
+              </span>
+            </div>
+
+            <div class="response-list-item-value">
+              ${stringsCriticalHitDamage+" (costas)"}: 
+              <span class="yellow">
+                ${response.ui_back_critical}
+              </span>
+            </div>
+
+            <div class="response-list-item-value">
+              ${stringsAverageDamage+" (costas)"}: 
+              <span class="yellow">
+                ${response.ui_back_average}
               </span>
             </div>
 
