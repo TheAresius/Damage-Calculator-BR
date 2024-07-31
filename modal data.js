@@ -290,8 +290,8 @@ var enemyData = {
     "20": {
         name: "Executor do Vazio",
         description: stringIsNotBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
-                        "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
-                        "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de 200%. Some esse valor aos seus buffs, caso deseje.",
+                                       "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
+                                       "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de <span class='yellow'>200%</span>. Some esse valor aos seus buffs, caso deseje.",
         status:{
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
@@ -309,9 +309,9 @@ var enemyData = {
 
     "21": {
         name: "Observador do Vazio",
-        description: stringIsBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
-                     "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
-                     "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de 200%. Some esse valor aos seus buffs, caso deseje.",
+        description: stringIsNotBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
+                                       "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
+                                       "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de <span class='yellow'>200%</span>. Some esse valor aos seus buffs, caso deseje.",
         status:{
             defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
             defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
@@ -321,8 +321,8 @@ var enemyData = {
                         "<span class='tab'>- 3° fase <span class='yellow'>50.12M (2005 barras)</span></span>.<br>"+
                         "<span class='tab'>- 4° fase <span class='yellow'>70.18M (2807 barras)</span></span>."
         },
-        extra: "- A cada 60 segundos o inimigo utilizará a mecânica de casting"+
-                "- É necessário causar 2M de dano para interromper a mecânica na fase 3 e 3M de dano na fase 4.",
+        extra: "- A cada 60 segundos o inimigo utilizará a mecânica de casting.<br>"+
+               "- É necessário causar 2M de dano para interromper a mecânica na fase 3 e 3M de dano na fase 4.",
         path: 'images/monsters/gazer.png'
     },
     "22": {
