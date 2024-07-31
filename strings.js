@@ -1,18 +1,21 @@
 // file to make translation easier
 
-const stringsAlertHarkyon =
-  "Nota: O Harkyon ignora o buff de dano do título.\nCaso possua um título com buff de dano lembre-se de remover 5% ou 10% na opção 'Buffs'.";
 const stringsErrorInvalidData =
   "Algo de errado não está certo. Reveja os valores inseridos.";
 const stringsErrorHarrier =
   "Você não pode aplicar o Debuff de Contaminação neste monstro em específico. Reveja os valores inseridos.";
-const stringsAlertRaid = 
-  "Nota: O valor de 20% de debuff de contaminação está sendo aplicado por conta da raid. Não esqueça de inserir sua resistência a contaminação."
-const stringsAlertVoid2 = 
-  "Nota: O buff adquirido do Executor do Vazio, presente nas partes 2, 3 e 4 do Vazio (Contaminação) é de 200%. Some esse valor aos seus buffs, caso deseje."
 const stringsComboDamage = "Dano de combo";
 const stringsSkillDamage = "Dano de skill";
 const stringsPetDamage = "Dano de pet";
+
+const stringDef1 = "- Defesa contra ataques normais: ";
+const stringDef2 = "- Defesa contra pet: ";
+const stringDef3 = "- Defesa contra habilidades: ";
+const stringIsBoss = "Este inimigo é considerado um chefe. ";
+const stringIsNotBoss = "Este inimigo <b>não</b> é considerado um chefe. ";
+const stringEstHP = " - HP (estimado): ";
+const stringScaleHP = " (o HP deste inimigo é aumentado em 22% para cada membro adicional do grupo)."
+
 
 // -- historyListStrings
 const stringsHistoryListTitle = "Histórico de Cálculos";

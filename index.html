@@ -12,6 +12,8 @@
   <script src="strings.js"></script>
   <script src="ui.js"></script>
   <script src="historyList.js"></script>
+  <script src="modal.js"></script>
+  <script src="modal data.js"></script>
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -73,36 +75,56 @@
       </label>
     </form>
     <div id="list">
-      <label for="EnemyCharacter">Tipo de Monstro:</label>
+      <label for="EnemyCharacter" data-shrink="True">Inimigo:</label>
       <select id="Enemy_list" onchange="warn(this.value);">
-        <option value="0">Monstro normal</option>
-        <option class="separator" disabled>──────────────────</option>
-        <option value="1">Gorgos (1F)</option>
-        <option value="2">Gadosen (2F)</option>
-        <option value="3">Kamiki (3F)</option>
-        <option value="4">Gaikoz (4F)</option>
-        <option value="5">Cazeaje (5F)</option>
-        <option value="6">Primeiro Gorgos (6F)</option>
-        <option value="17">Dupla de Gorgos (6F)</option>
-        <option value="7">Primeiro Gaikoz (7F)</option>
-        <option value="16">Dupla de Gaikoz (7F)</option>
-        <option value="8">Kamiki (8F)</option>
-        <option value="9">Gadosen (9F)</option>
-        <option value="10">Cazeaje (10F)</option>
-        <option class="separator" disabled>──────────────────</option>
-        <option value="11">Berkas (Corpo)</option>
-        <option value="12">Berkas (Patas)</option>
-        <option class="separator" disabled>──────────────────</option>
-        <option value="13">Harkyon (Corpo)</option>
-        <option value="14">Harkyon (Patas)</option>
-        <option class="separator" disabled>──────────────────</option>
-        <option value="15">Rainha Gorgos</option>
-        <option class="separator" disabled>──────────────────</option>
-        <option value="18">Devorador do Vazio</option>
-        <option value="19">Sentinela/Demolidor do Vazio</option>
-        <option value="20">Executor do Vazio</option>
-        <option value="21">Observador do Vazio</option>
-      </select>
+            <option value="0">Monstro normal</option>
+            <option class="separator" disabled>CLAUSTRO INFINITO</option>
+            <option value="22">Rofnus</option>
+            <option value="23">Rofnus (rec. HP)</option>
+            <option value="24">Skeram</option>
+            <option value="25">Dekane</option>
+            <option value="26">Dekane (proteção roxa)</option>
+            <option value="27">Dekane (proteção vermelha)</option>
+            <option value="28">Duel</option>
+            <option value="29">Duel (enfraquecido)</option>
+            <option class="separator" disabled>VAZIO</option>
+            <option value="18">Devorador do Vazio</option>
+            <option value="19">Sentinela/Demolidor do Vazio</option>
+            <option value="20">Executor do Vazio</option>
+            <option value="21">Observador do Vazio</option>
+            <option class="separator" disabled>TOD</option>
+            <option value="1">Gorgos (1F)</option>
+            <option value="2">Gadosen (2F)</option>
+            <option value="3">Kamiki (3F)</option>
+            <option value="4">Gaikoz (4F)</option>
+            <option value="5">Cazeaje (5F)</option>
+            <option value="6">Primeiro Gorgos (6F)</option>
+            <option value="17">Dupla de Gorgos (6F)</option>
+            <option value="7">Primeiro Gaikoz (7F)</option>
+            <option value="16">Dupla de Gaikoz (7F)</option>
+            <option value="15">Primeira Kamiki (8F)</option>
+            <option value="8">Dupla de Kamiki (8F)</option>
+            <option value="34">Primeiro Gadosen (9F)</option>
+            <option value="9">Dupla de Gadosen (9F)</option>
+            <option value="10">Cazeaje (10F)</option>
+            <option class="separator" disabled>BERKAS</option>
+            <option value="11">Berkas (Corpo)</option>
+            <option value="12">Berkas (Patas)</option>
+            <option class="separator" disabled>HARKYON</option>
+            <option value="13">Harkyon (Corpo)</option>
+            <option value="14">Harkyon (Patas)</option>
+            <option class="separator" disabled>TORRE DAS ILUSÕES</option>
+            <option value="30">Periett</option>
+            <option value="31">Thanatos</option>
+            <option value="32">Evilis</option>
+            <option value="33">Caxias Grandiel</option>
+            <option class="separator" disabled>OUTRO MUNDO</option>
+            <option value="35">Guardião do Templo</option>
+            <option value="36">Guardião do Templo (enfraquecido)</option>
+            <option value="37">Gaian</option>
+            <option value="38">Gaian (enfraquecido)</option>
+        </select>
+      <button id="showInfoButton">+Info</button>
     </div>
     <div id="button">
       <input type="button" id="skill" value="Calcular" onclick="calculate()" />
@@ -148,9 +170,19 @@
     </p>
     
   </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&#10006;</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+
+</div>
 </body>
 <footer>
-  <div id="update"> v.1.3.1 - Última atualização: 14 de Janeiro de 2024.</div>
+  <div id="update"> v.1.4.0 - Última atualização: 30 de Julho de 2024.</div>
 </footer>
 
 </html>
