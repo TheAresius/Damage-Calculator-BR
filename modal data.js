@@ -409,7 +409,7 @@ var enemyData = {
     },
 
     "28": {
-        name: "Duel Pon Zec, o Vingador(Claustro Infinito)",
+        name: "Duel Pon Zec, o Vingador (Claustro Infinito)",
         description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 3.",
         status:{
             defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
