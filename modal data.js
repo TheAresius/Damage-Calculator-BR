@@ -163,9 +163,9 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>6.00M</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>1.88M</span>" + stringScaleHP
         },
-        extra: "- É necessário remover apenas 33% do HP para derrotá-lo.",
+        extra: "- É necessário remover apenas 50% do HP para derrotá-lo.",
         path: 'images/monsters/gadosen 2.png'
     },
 
@@ -176,7 +176,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>6.00M (353 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>8.08M (353 barras)</span>."
         },
         extra: "- Gadosen usará sua mecânica de 'absorção de alma' a cada 40 segundos. Se você estiver na área vermelha você morrerá, não importa o quê faça.",
         path: 'images/monsters/gadosen 1.png'
