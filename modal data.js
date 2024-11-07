@@ -309,7 +309,7 @@ var enemyData = {
 
     "21": {
         name: "Observador do Vazio",
-        description: stringIsBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
+        description: stringIsBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase. <br>"+
                                        "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
                                        "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de <span class='yellow'>200%</span>. Some esse valor aos seus buffs, caso deseje.",
         status:{
