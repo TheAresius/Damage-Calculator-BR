@@ -103,10 +103,10 @@ function calculate() {
   } else if(enemy==="27"){//Dekane red
     DEF = 0.58335
     sDEF = -0.56255
-  } else if(enemy==="28"){//Duel 3
+  } else if(enemy==="28"||enemy==="42"){//Duel 3
     DEF = 2/3
     sDEF = 71/96
-  } else if(enemy==="29"){//Duel 3
+  } else if(enemy==="29"||enemy==="43"){//Duel 3
     DEF = 0.5
     sDEF = 0.609375
   } else if(enemy==="35"){

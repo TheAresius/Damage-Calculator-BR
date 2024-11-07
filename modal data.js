@@ -309,7 +309,7 @@ var enemyData = {
 
     "21": {
         name: "Observador do Vazio",
-        description: stringIsNotBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
+        description: stringIsBoss + "Está presente na raid Vazio (Invasão) a partir da 2° fase.<br>"+
                                        "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
                                        "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de <span class='yellow'>200%</span>. Some esse valor aos seus buffs, caso deseje.",
         status:{
@@ -334,7 +334,8 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>39.90%</span>",
             health: stringEstHP + "<span class='yellow'>8.00M</span>."
         },
-        extra: "Rofnus fica mais suscetível a dano quando está recuperando HP. Seu dano final é aumentado em 30% contra ele.",
+        extra: "- Quando estiver abaixo de 66% de HP, Rofnus poderá entrar no estado de fúria e recuperar até 33% de HP total.<br>"+
+               "- Rofnus fica mais suscetível a dano quando está recuperando HP. Seu dano final é aumentado em 30% contra ele.",
         path: 'images/monsters/rofnus.png'
     },
     "23": {
@@ -346,7 +347,8 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
             health: stringEstHP + "<span class='yellow'>8.00M</span>"
         },
-        extra: "Rofnus fica mais suscetível a dano quando está recuperando HP. Seu dano final é aumentado em 30% contra ele.",
+        extra: "- Quando estiver abaixo de 66% de HP, Rofnus poderá entrar no estado de fúria e recuperar até 33% de HP total.<br>"+
+               "- Rofnus fica mais suscetível a dano quando está recuperando HP. Seu dano final é aumentado em 30% contra ele.",
         path: 'images/monsters/rofnus.png'
     },
 
@@ -359,7 +361,7 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>23.40%</span>",
             health: stringEstHP + "<span class='yellow'>10.00M</span>"
         },
-        extra: "-",
+        extra: "- Skeram absorverá 5% do seu HP total para cada um de suas formigas que forem derrotadas.",
         path: 'images/monsters/skeram.png'
     },
 
@@ -374,7 +376,8 @@ var enemyData = {
         },
         extra: "- Quando sem nenhuma proteção, a Bruxa do Caos recebe 25% de dano a mais proveniente de ataques normais e de pet, em comparação com inimigos com a mesma defesa.<br>"+
                "- Ao invocar a <span class='purple'>proteção roxa</span>, a Bruxa do Caos recebe 100% de dano a mais proveniente de ataques normais e de pet, e reduz o dano proveniente de habilidades em 73%. <br>"+
-               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.",
+               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.<br>"+
+               "- Se a Bruxa do Caos não for derrotada em até 90 segundos ela renascerá com o 100% do HP.",
         path: 'images/monsters/dekane.png'
     },
 
@@ -389,7 +392,8 @@ var enemyData = {
         },
         extra: "- Quando sem nenhuma proteção, a Bruxa do Caos recebe 25% de dano a mais proveniente de ataques normais e de pet, em comparação com inimigos com a mesma defesa.<br>"+
                "- Ao invocar a <span class='purple'>proteção roxa</span>, a Bruxa do Caos recebe 100% de dano a mais proveniente de ataques normais e de pet, e reduz o dano proveniente de habilidades em 73%. <br>"+
-               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.",
+               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.<br>"+
+               "- Se a Bruxa do Caos não for derrotada em até 90 segundos ela renascerá com o 100% do HP.",
         path: 'images/monsters/dekane.png'
     },
 
@@ -404,12 +408,13 @@ var enemyData = {
         },
         extra: "- Quando sem nenhuma proteção, a Bruxa do Caos recebe 25% de dano a mais proveniente de ataques normais e de pet, em comparação com inimigos com a mesma defesa.<br>"+
                "- Ao invocar a <span class='purple'>proteção roxa</span>, a Bruxa do Caos recebe 100% de dano a mais proveniente de ataques normais e de pet, e reduz o dano proveniente de habilidades em 73%. <br>"+
-               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.",
+               "- Ao invocar a <span class='red'>proteção vermelha</span>, a Bruxa do Caos reduz o dano proveniente de ataques normais e de pet em 66% e recebe 60% de dano a mais proveniente de habilidades.<br>"+
+               "- Se a Bruxa do Caos não for derrotada em até 90 segundos ela renascerá com o 100% do HP.",
         path: 'images/monsters/dekane.png'
     },
 
     "28": {
-        name: "Duel Pon Zec, o Vingador (Claustro Infinito)",
+        name: "Duel Pon Zec, o Vingador (Dificuldade 3)",
         description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 3.",
         status:{
             defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
@@ -417,22 +422,24 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<span class='yellow'>16.10M (644 barras)</span>"
         },
-        extra: "- Duel executará a mecânica de 'casting' três vezes seguidas, sendo necessário causar 1.7M de dano para interrompê-lo.<br>"+
-                "- Ao interrompê-lo três, vezes Duel ficará enfraquecido e receberá 50% de dano mais.",
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até três vezes seguidas, sendo necessário causar 1.7M de dano em até 9 segundos para interrompê-lo.<br>"+
+               "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
+               "- Ao interrompê-lo três vezes seguidas, Duel ficará enfraquecido e receberá 50% de dano mais durante 9 segundos (extendível com congelamento/frame freeze).",
         path: 'images/monsters/duel.png'
     },
 
     "29": {
-        name: "Duel Pon Zec, o Vingador (enfraquecido) (Claustro Infinito)",
+        name: "Duel Pon Zec, o Vingador (enfraquecido) (Dificuldade 3)",
         description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 3.",
         status:{
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>60.94%</span>",
-            health: stringEstHP + "<span class='yellow'>16.00M (640 barras)</span>"
+            health: stringEstHP + "<span class='yellow'>16.10M (644 barras)</span>"
         },
-        extra: "- Duel executará a mecânica de 'casting' três vezes seguidas, sendo necessário causar 1.7M de dano para interrompê-lo.<br>"+
-                "- Ao interrompê-lo três vezes, Duel ficará enfraquecido e receberá 50% de dano mais.",
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até três vezes seguidas, sendo necessário causar 1.7M de dano para interrompê-lo.<br>"+
+               "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
+               "- Ao interrompê-lo três vezes seguidas, Duel ficará enfraquecido e receberá 50% de dano mais.",
         path: 'images/monsters/duel.png'
     },
 
@@ -541,6 +548,79 @@ var enemyData = {
         extra: "- Quando estiver abaixo de 66% de HP, Gaian poderá invocar seus golens pelo mapa. Você terá 12 segundos para derrotá-los.<br>"+
                "- Ao derrotar os golens, Gaian ficará paralizado durante 10 segundos e receberá 150% de dano a mais.",
         path: 'images/monsters/gaian.png'
+    },
+
+    "39": {
+        name: "Golem do Tempo (Claustro Infinito)",
+        description: stringIsNotBoss + "Está presente no primeiro estágio do Claustro Infinito na dificuldade 1.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            health: stringEstHP + "<br>"+
+                        "<span class='tab'>- Golem pequeno <span class='yellow'>23k</span></span>.<br>"+
+                        "<span class='tab'>- Golem grande <span class='yellow'>150k</span></span>.<br>",
+        },
+        extra: "-",
+        path: 'images/monsters/golem.png'
+    },
+
+    "40": {
+        name: "Morid (Claustro Infinito)",
+        description: stringIsNotBoss + "Está presente no segundo estágio do Claustro Infinito na dificuldade 1.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            health: stringEstHP + "<span class='yellow'>600k</span>."
+        },
+        extra: "",
+        path: 'images/monsters/morid.png'
+    },
+
+    "41": {
+        name: "Urca (Claustro Infinito)",
+        description: stringIsNotBoss + "Está presente no terceiro estágio do Claustro Infinito na dificuldade 1.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            health: stringEstHP + "<br>"+
+                        "<span class='tab'>- Urca pequeno <span class='yellow'>197k</span></span>.<br>"+
+                        "<span class='tab'>- Urca grande <span class='yellow'>1.97M</span></span>.<br>",
+        },
+        extra: "",
+        path: 'images/monsters/urkah.png'
+    },
+
+    "42": {
+        name: "Duel Pon Zec, o Vingador (Dificuldade 1)",
+        description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 1.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: stringEstHP + "<span class='yellow'>3.97M (158 barras)</span>"
+        },
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting', sendo necessário causar 500k de dano em até 9 segundos para interrompê-lo.<br>"+
+               "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
+               "- Ao interrompê-lo, Duel ficará enfraquecido e receberá 50% de dano mais durante 9 segundos (extendível com congelamento/frame freeze).",
+        path: 'images/monsters/duel.png'
+    },
+
+    "43": {
+        name: "Duel Pon Zec, o Vingador (enfraquecido) (Dificuldade 1)",
+        description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 1.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>60.94%</span>",
+            health: stringEstHP + "<span class='yellow'>3.97M (158 barras)</span>"
+        },
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting', sendo necessário causar 500k de dano em até 9 segundos para interrompê-lo.<br>"+
+               "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
+               "- Ao interrompê-lo, Duel ficará enfraquecido e receberá 50% de dano mais durante 9 segundos (extendível com congelamento/frame freeze).",
+        path: 'images/monsters/duel.png'
     },
 
 };
