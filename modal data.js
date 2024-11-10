@@ -19,7 +19,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>30.00%</span>",
-            health: stringEstHP + "<span class='yellow'>943k (37 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>900k (37 barras)</span>."
         },
         extra: "-",
         path: 'images/monsters/gorgos 1.png'
@@ -85,9 +85,9 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>30.00%</span>",
-            health: stringEstHP + "<span class='yellow'>1.29M</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>1.26M</span>" + stringScaleHP
         },
-        extra: "- É necessário remover apenas 65% do HP para derrotá-lo.",
+        extra: "- É necessário remover apenas 75% do HP para derrotá-lo.",
         path: 'images/monsters/gorgos 2.png'
     },
 
@@ -98,7 +98,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>3.31M (139 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>3.46M (139 barras)</span>."
         },
         extra: "-",
         path: 'images/monsters/gorgos 1.png'
@@ -111,7 +111,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>30.00%</span>",
-            health: stringEstHP + "<span class='yellow'>1.81M</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>1.89M</span>" + stringScaleHP
         },
         extra: "- É necessário remover apenas 50% do HP para derrotá-lo.",
         path: 'images/monsters/gaikoz 2.png'
@@ -124,7 +124,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>30.00%</span>",
-            health: stringEstHP + "<span class='yellow'>3.97M (167 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>4.15M (167 barras)</span>."
         },
         extra: "-",
         path: 'images/monsters/gaikoz 1.png'
@@ -137,7 +137,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>3.37M</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>3.52M</span>" + stringScaleHP
         },
         extra: "- Kamiki utilizará uma névoa congelante a cada 20 segundos em uma região demarcada no mapa. Essa névoa removerá seu HP rapidamente.",
         path: 'images/monsters/kamiki 2.png'
@@ -150,7 +150,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>3.37M (141 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>3.52M (141 barras)</span>."
         },
         extra: "- Kamiki utilizará uma névoa congelante a cada 20 segundos em uma região demarcada no mapa. Essa névoa removerá seu HP rapidamente.",
         path: 'images/monsters/kamiki 1.png'
@@ -163,9 +163,9 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>1.88M</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>1.97M</span>" + stringScaleHP
         },
-        extra: "- É necessário remover apenas 50% do HP para derrotá-lo.",
+        extra: "- É necessário remover apenas 60% do HP para derrotá-lo.",
         path: 'images/monsters/gadosen 2.png'
     },
 
@@ -176,7 +176,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>8.08M (353 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>8.44M (353 barras)</span>."
         },
         extra: "- Gadosen usará sua mecânica de 'absorção de alma' a cada 40 segundos. Se você estiver na área vermelha você morrerá, não importa o quê faça.",
         path: 'images/monsters/gadosen 1.png'
@@ -189,7 +189,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>52.77M (2401 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>55.18M (2401 barras)</span>."
         },
         extra: "- De tempos em tempos Cazeaje irá se teleportar para o centro do mapa e começará a acumular energia. Um conjunto de marcas aparecerá no chão indicando a sequência do ataque.<br>"+
                "- Se você usar skills enquanto ela concentra energia, você poderá causar delay no ataque e acabar matando os membros do grupo.",
