@@ -206,7 +206,8 @@ var enemyData = {
             health: stringEstHP + "<span class='yellow'>7.90M (307 barras)</span>" + stringScaleHP
         },
         extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo e patas. <br>"+
-               "- O dano causado nas patas é reduzido em 60%",
+               "- O dano causado nas patas é reduzido em 60%<br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
         path: 'images/monsters/berkas.png'
     },
 
@@ -220,7 +221,8 @@ var enemyData = {
             health: stringEstHP + "<span class='yellow'>7.90M (307 barras)</span>" + stringScaleHP
         },
         extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo e patas. <br>"+
-               "- O dano causado nas patas é reduzido em 60%",
+               "- O dano causado nas patas é reduzido em 60%<br>"+
+               "- Seu dano é reduzido em 66.66% sem o supressor",
         path: 'images/monsters/berkas.png'
     },
 
@@ -621,6 +623,141 @@ var enemyData = {
                "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
                "- Ao interrompê-lo, Duel ficará enfraquecido e receberá 50% de dano mais durante 9 segundos (extendível com congelamento/frame freeze).",
         path: 'images/monsters/duel.png'
+    },
+
+    "44": {
+        name: "Coração do Absoluto - parte de baixo do mapa",
+        description: stringIsNotBoss + "Está presente na parte inferior do primeiro estágio do Vazio (Pesadelo).",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>90.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>90.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
+            health: stringEstHP + "<span class='yellow'>2.10M </span>"
+        },
+        extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
+               "- Enquanto estiver sendo atacado, o Coração do Vazio irá perder sua defesa e receberá muito mais dano de habilidades.",
+        path: 'images/monsters/heart 1.png'
+    },
+
+    "45": {
+        name: "Coração do Absoluto (enfraquecido) - parte de baixo do mapa ",
+        description: stringIsNotBoss + "Está presente na parte inferior do primeiro estágio do Vazio (Pesadelo).",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>70.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>70.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>28.26%</span>",
+            health: stringEstHP + "<span class='yellow'>2.10M </span>"
+        },
+        extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
+               "- Enquanto estiver sendo atacado, o Coração do Vazio irá perder sua defesa e receberá muito mais dano de habilidades.",
+        path: 'images/monsters/heart 1.png'
+    },
+
+    "46": {
+        name: "Coração do Absoluto - parte de cima do mapa",
+        description: stringIsNotBoss + "Está presente na parte superior do primeiro estágio do Vazio (Pesadelo).",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>90.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>90.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
+            health: stringEstHP + "<span class='yellow'>7.30M </span>"
+        },
+        extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
+               "- Enquanto estiver sendo atacado, o Coração do Vazio irá perder sua defesa e receberá muito mais dano de habilidades.",
+        path: 'images/monsters/heart 2.png'
+    },
+
+    "47": {
+        name: "Coração do Absoluto (enfraquecido) - parte de cima do mapa",
+        description: stringIsNotBoss + "Está presente na parte superior do primeiro estágio do Vazio (Pesadelo).",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>70.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>70.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>28.26%</span>",
+            health: stringEstHP + "<span class='yellow'>7.30M </span>"
+        },
+        extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
+               "- Enquanto estiver sendo atacado, o Coração do Vazio irá perder sua defesa e receberá muito mais dano de habilidades.",
+        path: 'images/monsters/heart 2.png'
+    },
+
+    "48": {
+        name: "Apóstolo do Vazio (Absoluto) - 2F",
+        description: stringIsBoss + "Está presente no segundo estágio do Vazio (Pesadelo).<br>Não é possível quebrar a defesa deste inimigo.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: stringEstHP + "<span class='yellow'>6.58M (263 barras)</span>"
+        },
+        extra: "- De tempos em tempos o Apóstolo irá invocar uma aura roxa no mapa. Durante esse período o Apóstolo ficará parado e suscetível a dano, porém os jogadores que estiverem dentro da aura também invocarão diversos espinhos por onde estiverem.<br><br>"+
+               "- Após ~1:30 do início do estágio o Apóstolo irá utilizar a mecânica de 'danger', que invocará diversas esferas em sequência pelo mapa. Durante este período o Apóstolo deixará o mapa e não será possível causar dano a ele.<br>",
+        path: 'images/monsters/apostle 1.png'
+    },
+
+    "49": {
+        name: "Apóstolo do Vazio (Absoluto) - 3F",
+        description: stringIsBoss + "Está presente no terceiro estágio do Vazio (Pesadelo).<br>Não é possível quebrar a defesa deste inimigo.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: stringEstHP + "<span class='yellow'>14.92M (597 barras)</span>"
+        },
+        extra: "- De tempos em tempos o Apóstolo irá se teleportar para o canto direito (se ele estiver do lado esquerdo do mapa) ou para o canto esquerdo (se ele estiver do lado direito do mapa) e começará a disparar uma onda de energia. Durante esse período o Apóstolo ficará parado e muito vulnerável a dano.<br><br>"+
+               "- O Apóstolo poderá utilizar a mecânica de 'danger'. Um vento soprará para a esquerda ou para a direita, indicando o lado para o qual o boss voará enquanto causa uma grande quantidade de dano. Se ele voar para a esquerda ele ficará parado na plataforma de baixo; se voar para a direita ele ficará parado na plataforma de cima.<br><br>"+
+               "- Após realizar a mecânica de teleporte duas vezes o Apóstolo poderá utilizar a mecânica de 'Summon' e deixará o mapa até que os 'Observadores do Vazio' sejam derrotados. Após serem derrotados eles invocarão uma orbe de buff de dano e o Apóstolo ficará vulnerável por ~15 segundos.<br><br>"+
+               "- O buff adquirido ao derrotar os Observadores do Vazio é de <span class='yellow'>150%</span>. Some esse valor aos seus buffs, caso deseje.<br><br>"+
+               "- Se o Apóstolo for derrotado antes da mecânica de 'Summon' será possível acessar o estágio oculto (4F) do Vazio (Pesadelo).",
+        path: 'images/monsters/apostle 2.png'
+    },
+
+    "50": {
+        name: "Apóstolo do Vazio (Absoluto) - 4F",
+        description: stringIsBoss + "Está presente no estágio oculto (4F) do Vazio (Pesadelo). Só é possível acessar o estágio oculto caso o estágio 3 seja concluido antes da mecânica de 'Summon'.<br>Não é possível quebrar a defesa deste inimigo.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
+            health: stringEstHP + "<span class='yellow'>35.82M (1433 barras)</span>"
+        },
+        extra: "- O Apóstolo do Vazio ficará parado concentrando energia e causando uma pequena quantidade de dano. Se ele não for derrotado em 1 minuto a raid irá falhar automaticamente.<br><br>"+
+               "- A cada 10 segundos o Apóstolo invocará orbes de buffs pelo mapa. As orbes ficarão disponíveis durante 10 segundos e concedem um buff específico até que elas sumam do mapa.<br><br>"+
+               "- Orbe Azul: reduz o cooldown de todas as habilidades em 20 segundos, recupera duas barras de MP e faz com que o Apóstolo receba 400% de dano a mais de todas as habilidades (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).<br><br>"+
+               "- Orbe Vermelha: recupera 1000 de HP e faz com que o Apóstolo receba 900% de dano mais de comandos básicos e pet (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).",
+        path: 'images/monsters/apostle 3.png'
+    },
+
+    "51": {
+        name: "Apóstolo do Vazio (Absoluto) - 4F (Orbe Azul)",
+        description: stringIsBoss + "Está presente no estágio oculto (4F) do Vazio (Pesadelo). Só é possível acessar o estágio oculto caso o estágio 3 seja concluido antes da mecânica de 'Summon'.<br>Não é possível quebrar a defesa deste inimigo.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
+            health: stringEstHP + "<span class='yellow'>35.82M (1433 barras)</span>"
+        },
+        extra: "- O Apóstolo do Vazio ficará parado concentrando energia e causando uma pequena quantidade de dano. Se ele não for derrotado em 1 minuto a raid irá falhar automaticamente.<br><br>"+
+               "- A cada 10 segundos o Apóstolo invocará orbes de buffs pelo mapa. As orbes ficarão disponíveis durante 10 segundos e concedem um buff específico até que elas sumam do mapa.<br><br>"+
+               "- Orbe Azul: reduz o cooldown de todas as habilidades em 20 segundos, recupera duas barras de MP e faz com que o Apóstolo receba 400% de dano a mais de todas as habilidades (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).<br><br>"+
+               "- Orbe Vermelha: recupera 1000 de HP e faz com que o Apóstolo receba 900% de dano mais de comandos básicos e pet (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).",
+        path: 'images/monsters/apostle 3.png'
+    },
+
+    "52": {
+        name: "Apóstolo do Vazio (Absoluto) - 4F (Orbe Vermelha)",
+        description: stringIsBoss + "Está presente no estágio oculto (4F) do Vazio (Pesadelo). Só é possível acessar o estágio oculto caso o estágio 3 seja concluido antes da mecânica de 'Summon'.<br>Não é possível quebrar a defesa deste inimigo.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
+            health: stringEstHP + "<span class='yellow'>35.82M (1433 barras)</span>"
+        },
+        extra: "- O Apóstolo do Vazio ficará parado concentrando energia e causando uma pequena quantidade de dano. Se ele não for derrotado em 1 minuto a raid irá falhar automaticamente.<br><br>"+
+               "- A cada 10 segundos o Apóstolo invocará orbes de buffs pelo mapa. As orbes ficarão disponíveis durante 10 segundos e concedem um buff específico até que elas sumam do mapa.<br><br>"+
+               "- Orbe Azul: reduz o cooldown de todas as habilidades em 20 segundos, recupera duas barras de MP e faz com que o Apóstolo receba 400% de dano a mais de todas as habilidades (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).<br><br>"+
+               "- Orbe Vermelha: recupera 1000 de HP e faz com que o Apóstolo receba 900% de dano mais de comandos básicos e pet (não é considerado um buff, mas sim um aumento direto do dano recebido pelo boss).",
+        path: 'images/monsters/apostle 3.png'
     },
 
 };
