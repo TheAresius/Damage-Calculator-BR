@@ -203,7 +203,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            health: stringEstHP + "<span class='yellow'>7.90M (307 barras)</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
         },
         extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo e patas. <br>"+
                "- O dano causado nas patas é reduzido em 60%<br>"+
@@ -218,7 +218,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>40.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>40.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>53.12%</span>",
-            health: stringEstHP + "<span class='yellow'>7.90M (307 barras)</span>" + stringScaleHP
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
         },
         extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo e patas. <br>"+
                "- O dano causado nas patas é reduzido em 60%<br>"+
