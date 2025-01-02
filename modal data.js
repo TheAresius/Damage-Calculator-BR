@@ -489,7 +489,7 @@ var enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            health: stringEstHP + "<span class='yellow'>17.41M</span>"
+            health: stringEstHP + "<span class='yellow'>17.42M (697 barras)</span>"
         },
         extra: "- Quando Grandiel estiver abaixo de 80% de HP ele poderá invocar Drall e Vairne, que atacarão simultaneamente. Será necessário derrotá-los para que Grandiel possa receber dano.<br>"+
                "- Após derrotar Drall e Vairne, e quando estiver abaixo de 50% de HP, Grandiel poderá invocar 5 clones, que atacarão simultaenamente.",
