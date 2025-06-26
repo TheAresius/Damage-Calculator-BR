@@ -15,6 +15,7 @@
   <script src="modal.js"></script>
   <script src="modal data.js"></script>
   <script src="script.js"></script>
+  <script src="calc-info.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -22,45 +23,144 @@
   <section>
     <h1>Grand Chase <br />Calculadora de dano</h1>
     <div id="data_enter">
-      <p id="level">
-        Nível do personagem (1~85):
-        <input type="number" name="yourLV_string" id="yourLV_string" min="1" max="85" />
+      
+      <div id="level" class="section">
 
-        <br />Nível do monstro (1~149):
-        <input type="number" name="monsterLV_string" id="monsterLV_string" min="1" max="149" />
-      </p>
-      <p id="main_stats">
-        Ataque:
-        <input type="string" name="ATK_string" id="ATK_string" min="0" />
+        <div class="input-group">
+          <label for="yourLV_string">Nível do personagem (1~85):</label>
+          <input type="number" name="yourLV_string" id="yourLV_string" min="1" max="85" />
+        </div>
+    
+        <div class="input-group">
+          <label for="monsterLV_string">Nível do monstro (1~149):</label>
+          <input type="number" name="monsterLV_string" id="monsterLV_string" min="1" max="149" />
+        </div>
 
-        <br />Ataque especial:
-        <input type="string" name="sATK_string" id="sATK_string" min="0" />
+      </div>
+    
 
-        <br />Chance de crítico (%):
-        <input type="string" name="crit_r_string" id="crit_r_string" min="0" />
 
-        <br />Dano crítico (%):
-        <input type="string" name="crit_d_string" id="crit_d_string" min="0" />
-      </p>
-      <p id="harrier">
-        Debuff Contaminação (%):
-        <input type="string" name="harrier_debuff" id="harrier_d_string" min="0" />
 
-        <br />Resist. Contaminação (%):
-        <input type="string" name="harrier_resist" id="harrier_r_string" min="0" />
-      </p>
-      <p id="Damage">
-        Buffs (%):
-        <input type="string" name="buffs" id="buffs_string" min="0" />
-        <br/>
-        Buffs ataque pelas costas (%):
-        <input type="string" name="buffs" id="back_attack_string" min="0" />
-        <br/>
-        
-        Valor do dano:
-        <input type="string" name="skill_multi_string" id="skill_multi_string" min="0" />
-      </p>
+      <div id="main_stats" class="section">
+
+        <div class="input-group">
+          <label for="ATK_string">Ataque:</label>
+          <input type="text" name="ATK_string" id="ATK_string" />
+        </div>
+    
+        <div class="input-group">
+          <label for="sATK_string">Ataque especial:</label>
+          <input type="text" name="sATK_string" id="sATK_string" />
+        </div>
+    
+        <div class="input-group">
+          <label for="crit_r_string">Chance de crítico (%):</label>
+          <input type="text" name="crit_r_string" id="crit_r_string" />
+        </div>
+    
+        <div class="input-group">
+          <label for="crit_d_string">Dano crítico (%):</label>
+          <input type="text" name="crit_d_string" id="crit_d_string" />
+        </div>
+
+      </div>
+    
+
+
+
+      <div id="harrier" class="section">
+
+        <div class="input-group">
+          <label for="harrier_d_string">Debuff Contaminação (%):</label>
+          <input type="text" name="harrier_debuff" id="harrier_d_string" />
+        </div>
+    
+        <div class="input-group">
+          <label for="harrier_r_string">Resist. Contaminação (%):</label>
+          <input type="text" name="harrier_resist" id="harrier_r_string" />
+        </div>
+
+      </div>
+    
+
+
+
+      <div id="buffs" class="section">
+        <div class="input-group">
+          <label for="asd_buffs_string">Dano de todas as habilidades (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="asd_buffs_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="asd_buffs_string" />
+            
+          </div>
+          
+        </div>
+    
+        <div class="input-group">
+          <label for="pola_buffs_string">Dano ao atacar / ser atacado (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="pola_buffs_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="pola_buffs_string" />
+            
+          </div>
+          
+        </div>
+    
+        <div class="input-group">
+          <label for="boss_buffs_string">Dano causado a chefes (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="boss_buffs_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="boss_buffs_string" />
+            
+          </div>
+          
+        </div>
+    
+        <div class="input-group">
+          <label for="back_attack_string">Ataque pelas costas (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="back_buffs_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="back_attack_string" />
+            
+          </div>
+          
+        </div>
+
+        <div class="input-group">
+          <label for="buffs_string">Outros buffs (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="other_buffs_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="buffs_string" />
+            
+          </div>
+          
+        </div>
+
+        <div class="input-group">
+          <label for="def_multi_string">Debuffs de quebrar defesa (%):</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="def_multi_checkbox" checked title="Marque essa opção para incluir este buff no seu dano" tabindex="-1"/>
+            <input type="text" name="buffs" id="def_multi_string" />
+            
+          </div>
+          
+        </div>
+      </div>
+    
+
+
+
+      <div id="Damage" class="section">
+        <div class="input-group">
+          <label for="skill_multi_string">Dano base:</label>
+          <input type="text" name="skill_multi_string" id="skill_multi_string" />
+        </div>
+      </div>
     </div>
+    
+    
+
+
 
     <form id="form">
       <label>
@@ -74,10 +174,31 @@
         pet
       </label>
     </form>
+    
     <div id="list">
       <label for="EnemyCharacter" data-shrink="True">Inimigo:<br></label>
-      <select id="Enemy_list" onchange="warn(this.value);">
+      <select id="Enemy_list">
             <option value="0">Monstro normal</option>
+
+            <option class="separator" disabled>CLAUSTRO INFINITO 4</option>
+            <option value="53">Astaroth (Cantos)</option>
+            <option value="54">Astaroth (Meio)</option>
+            <option value="55">Dragão Guerreiro</option>
+            <option value="56">Dragão Guerreiro (enfraquecido)</option>
+            <option value="57">Dragão Guerreiro (super enfraquecido)</option>
+            <option value="58">Encantrix</option>
+            <option value="59">Duel </option>
+            <option value="60">Duel (enfraquecido)</option>
+
+            <option class="separator" disabled>CLAUSTRO INFINITO 3</option>
+            <option value="22">Rofnus</option>
+            <option value="23">Rofnus (rec. HP)</option>
+            <option value="24">Skeram</option>
+            <option value="25">Dekane</option>
+            <option value="26">Dekane (proteção roxa)</option>
+            <option value="27">Dekane (proteção vermelha)</option>
+            <option value="28">Duel</option>
+            <option value="29">Duel (enfraquecido)</option>
 
             <option class="separator" disabled>VAZIO 1</option>
             <option value="18">Devorador do Vazio</option>
@@ -112,21 +233,6 @@
             <option value="9">Dupla de Gadosen (9F)</option>
             <option value="10">Cazeaje (10F)</option>
 
-            <option class="separator" disabled>CLAUSTRO INFINITO</option>
-            <option value="39">Golem do Tempo</option>
-            <option value="40">Morid</option>
-            <option value="41">Urca</option>
-            <option value="42">Duel (Etapa 1)</option>
-            <option value="43">Duel (Etapa 1) (enfraquecido)</option>
-            <option value="22">Rofnus</option>
-            <option value="23">Rofnus (rec. HP)</option>
-            <option value="24">Skeram</option>
-            <option value="25">Dekane</option>
-            <option value="26">Dekane (proteção roxa)</option>
-            <option value="27">Dekane (proteção vermelha)</option>
-            <option value="28">Duel (Etapa 3)</option>
-            <option value="29">Duel (Etapa 3) (enfraquecido)</option>
-
             <option class="separator" disabled>BERKAS</option>
             <option value="11">Berkas (Corpo)</option>
             <option value="12">Berkas (Patas)</option>
@@ -151,7 +257,9 @@
     </div>
     <div id="button">
       <input type="button" id="skill" value="Calcular" onclick="calculate()" />
+      <button id="calc-info"  class="calc-info" data-tooltip="Clique para mostrar informações sobre a calculadora.">Calc Info</button>
     </div>
+    
 
     <div id="damage">
       <!--Results will show up here-->
@@ -174,7 +282,7 @@
       <span id="me">aresius4407</span>.
     </p>
     <p id="comment2">
-      Um agradecimento aos jogadores DsinC e 이빛나 que ajudaram a criar a Tabela de Dano para PvE e ao Esawa pela adição
+      Um agradecimento aos jogadores 'DsinC' e 'i' que ajudaram a criar a Tabela de Dano para PvE e ao 'Esawa' pela adição
       do histórico de cálculos.
     </p>
     <p id="comment3">
@@ -205,7 +313,7 @@
 </div>
 </body>
 <footer>
-  <div id="update"> v.1.4.4 - Última atualização: 30 de Novembro de 2024.</div>
+  <div id="update"> v.1.6.0 - Última atualização: 26 de Junho de 2025.</div>
 </footer>
 
 </html>
