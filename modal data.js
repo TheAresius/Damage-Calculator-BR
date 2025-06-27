@@ -917,10 +917,10 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<span class='yellow'>46.25M (1850 barras)</span>"
         },
-        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas, sendo necessário causar 3.7M de dano em até 10 segundos para interrompê-lo.<br>"+
-               "- Eventualmente (aleatoriamente? precisa de mais testes), será necessário causar até 4.8M de dano para interrompê-lo.<br>"+
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas. Você terá 10 segundos para interromper cada casting.<br>"+
+               "- Será necessário causar 3.7M de dano para interromper os três primeiros castings e 2.9M para interromper o último.<br>"+
                "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
-               "- Ao interrompê-lo quatro vezes seguidas, Duel ficará enfraquecido e receberá 20% de dano a mais durante 9 segundos (extendível com congelamento/frame freeze).",
+               "- Ao interrompê-lo quatro vezes seguidas, Duel ficará enfraquecido e receberá 20% de dano a mais durante 8 segundos.",
         path: 'images/monsters/duel4.png',
         IsBoss: true
     },
@@ -934,10 +934,10 @@ var enemyData = {
             defense3: stringDef3 + "<span class='yellow'>60.94%</span>",
             health: stringEstHP + "<span class='yellow'>46.25M (1850 barras)</span>"
         },
-        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas, sendo necessário causar 3.7M de dano em até 10 segundos para interrompê-lo.<br>"+
-               "- Eventualmente (aleatoriamente? precisa de mais testes), será necessário causar até 4.8M de dano para interrompê-lo.<br>"+
+        extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas. Você terá 10 segundos para interromper cada casting.<br>"+
+               "- Será necessário causar 3.7M de dano para interromper os três primeiros castings e 2.9M para interromper o último.<br>"+
                "- Se Duel não for interrompido ele realizará um ataque poderoso e voltará ao padrão usual de ataques.<br>"+
-               "- Ao interrompê-lo quatro vezes seguidas, Duel ficará enfraquecido e receberá 20% de dano a mais durante 9 segundos (extendível com congelamento/frame freeze).",
+               "- Ao interrompê-lo quatro vezes seguidas, Duel ficará enfraquecido e receberá 20% de dano a mais durante 8 segundos.",
         path: 'images/monsters/duel4.png',
         IsBoss: true
     },
