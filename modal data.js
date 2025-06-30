@@ -931,7 +931,7 @@ var enemyData = {
         status:{
             defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>60.94%</span>",
+            defense3: stringDef3 + "<span class='yellow'>68.75%</span>",
             health: stringEstHP + "<span class='yellow'>46.25M (1850 barras)</span>"
         },
         extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas. Você terá 10 segundos para interromper cada casting.<br>"+
