@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Como o dano funciona? - Grand Chase</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../general-style.css" />
+  <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon" />
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+  <script src="script.js" defer></script>
+  <script src="../alerts.js" defer></script>
+  
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+  <meta name="view-transition" content="same-origin" />
+</head>
+
+<body>
+    <a href="https://thearesius.github.io/Damage-Calculator-EN/damage-info/" class="floating-lang-btn" title="Switch to English">
+        <img src="../images/usa.png" alt="English Flag">
+    </a>
+    <button id="menuTrigger" class="floating-menu-btn" title="Menu Principal">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <div id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <h3 class="menu-title">Grand Chase Tools<br><span>Aresius</span></h3>
+            <button id="menuClose" class="menu-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+
+        <div class="menu-content">
+            <div class="menu-group">
+                <span class="group-title">Navegação</span>
+
+                <a href="../index.html" class="menu-link">
+                    <ion-icon name="calculator-outline"></ion-icon>
+                    Calculadora de Dano
+                </a>
+                
+                <a href="index.html" class="menu-link">
+                    <ion-icon name="book-outline"></ion-icon>
+                    Como funciona o Dano?
+                </a>
+                
+
+                <a href="../roadmap/index.html" class="menu-link">
+                    <ion-icon name="map-outline"></ion-icon>
+                    Roadmap
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Apoio / Donate</span>
+                
+                <a href="#" class="menu-link" onclick="openLivePix(); return false;">
+                    <ion-icon name="qr-code-outline"></ion-icon>
+                    LivePix (QR Code)
+                </a>
+
+                <a href="https://ko-fi.com/TheAresius" target="_blank" class="menu-link">
+                    <img src="https://storage.ko-fi.com/cdn/cup-border.png" class="support-icon kofi-wiggle" alt="Ko-fi">
+                    Ko-fi
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Social</span>
+                
+                <a href="https://linktr.ee/thearesius" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/linktree.ico" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    LinkTree
+                </a>
+                <a href="https://github.com/TheAresius/Damage-Calculator-BR" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/github.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Projeto no GitHub
+                </a>
+                <a href="http://discordapp.com/users/289929075886129152" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/discord.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Discord: aresius4407
+                </a>
+                <a href="https://www.youtube.com/@Aresius" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/youtube.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Canal no YouTube
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Extras</span>
+                <a href="https://docs.google.com/spreadsheets/d/1FGxKHQuwz_Jx-GdYd6647FiAE9UbS6mZgufXor9_DZk/edit#gid=722314000" target="_blank" class="menu-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">   
+                    Tabela de dano base
+                </a>
+
+                <a href="https://eitur.github.io/gcc-card/br/" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/card.ico" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">   
+                    Gerenciador de Cartas (by daughterly)
+                </a>
+            </div>
+
+        </div>
+
+        <div class="menu-footer">
+            <p>Desenvolvido por <strong>Aresius</strong></p>
+            
+            <div class="credits-container">
+                <span class="credits-label">Agradecimentos Especiais</span>
+                <p class="credits-names">
+                    DsinC &bull; i &bull; Esawa
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2026 Grand Chase Tools
+            </p>
+            
+        </div>
+    </div>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <div class="navigation-header">
+    
+    </div>
+
+    <main>
+        <div class="dmg-description">
+            <h1>Como o dano funciona?</h1>
+
+            <p class="justified"><span class="tab">Primeiramente vou demonstrar todo o formalismo matemático e o método de análise de dados para a fórmula de dano do jogo, em seguida vou explicar detalhadamente como ela funciona.</span></p>
+            
+            <div class="separator"></div>
+            
+            <h3>Formalismo matemático da fórmula de dano</h3>
+
+            <p class="justified"><span class="tab">Foram propostos diversos modelos matemáticos para a fórmula de dano no jogo: lineares, polinomiais, exponenciais e combinações de modelos não lineares.</span></p>
+            <p class="justified"><span class="tab">Um modelo que, a princípio, faz sentido com o jogo e conseguiu trazer resultados positivos foi:</span></p>
+
+            <div class="latex">\( \text{dano} = \text{constante de correção} \times \left( \text{Ataque + Ataque Especial} \right)\times (1-\text{defesa}) \times \text{dano base}\)</div>
+            <p class="justified"><span class="tab">Ou, em uma linguagem matemática, o dano pode ser escrito como uma função \( f: \mathbb{R}^4\to \mathbb{R} \) que mapeia um vetor \(\mathbf{X}=(x_1, x_2, x_3, x_4)\), \( \mathbf{X} \in \mathbb{R}^4 \) e retorna um escalar:</span></p>
+            <div class="latex">\( f(\mathbf{X})=k(x_1+x_2)(1-x_3)x_4 \)</div>
+            <p class="justified">
+                <span class="tab">
+                    Isso significa que a fórmula de dano leva em conta quatro fatores para fazer o cálculo: o Ataque (\( x_1\)), o Ataque Especial (\( x_2\)), a Defesa do inimigo <br>(\( x_3\)) e o dano base que seu personagem causa com algum ataque (\( x_4\)).
+                    Para simplificar a leitura, vou chamar as variáveis \(x_1\) de \(x_{ATK}\), \(x_2\) de \(x_{SPA}\), \(x_3\) de \(x_{DEF}\) e \(x_4\) de \(x_{BASE}\)
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    Para testar a validade desse modelo seria necessário, primeiramente, coletar diversos dados do dano causado para cada conjunto de ataque, ataque especial, defesa e dano base para que, em seguida, fosse possível realizar
+                    um ajuste multivariado e fosse obtido o valor da constante de correção.
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    Essa forma de análise pode ser computacionalmente muito custosa, uma vez que estamos lidando com quatro variáveis independentes e um grande volume de dados. Para contornar esse problema, nós usualmente partimos de um modelo mais simples e vamos tornando-o cada vez mais complexo 
+                    e próximo da realidade.
+                </span>
+
+                <p class="justified">
+                <span class="tab">
+                    Inicialmente foi fixado o valor do dano base e da defesa, e variado apenas
+                    os valores de ataque e ataque especial, ou seja, os status foram mudados a cada teste, mas o monstro e a skill utilizados foram os mesmos, tornando a forma de análise muito mais simples e sendo possível utilizar um método de data fitting
+                    como mínimos quadrados.
+                </span>
+                
+            </p>
+
+            <p class="justified">
+                <span class="tab">
+                    Também foi interessante adotar uma forma de "ataque resultante", que seria a soma do ataque com o ataque especial. Chamei esse "ataque resultante" de \(x_{RES}\). Dessa forma forma: \(x_{RES} = x_{ATK} + x_{SPA}\).
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    Eu também acoplei a defesa e o dano base à constante de correção \(k\), uma vez que, ao usar o mesmo ataque em um mesmo inimigo, o dano sempre permanece igual. Assim, temos que a nova constante de correção é: \(k' = k \cdot x_{DEF} \cdot x_{BASE}\).
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    Com isso o modelo proposto foi simplificado a uma função \( f: \mathbb{R}\to \mathbb{R} \):
+                </span>
+            </p>
+            <div class="latex">\( f(x_{RES})=k'x_{RES} \)</div>
+            <p class="justified">
+                    no qual o valor de \(k'\) representa o acoplamento da constante de correção, defesa e dano base. Dessa forma, como as únicas variáveis agora são o "ataque resultante" e o valor do dano que podemos ver na tela, ficou muito simples fazer uma análise estatística do 
+                    ataque resultante <i>versus</i> o dano causado ao inimigo. Assim foi possível obter o valor dessa constante e finalmente foi possível prever o dano utilizando qualquer combinação de ataque e ataque especial.
+            </p>
+
+            <p class="justified">
+                <span class="tab">
+                Porém, enquanto a análise era feita, a famosa <a href="https://docs.google.com/spreadsheets/d/1FGxKHQuwz_Jx-GdYd6647FiAE9UbS6mZgufXor9_DZk/edit#gid=722314000" class="inline-link" target="_blank" rel="noopener noreferrer">tabela coreana</a>
+                foi publicada. Dessa forma foi possível desacoplar o valor do dano base da constante \(k'\) e reescrever a nossa fórmula de dano para que fosse possível utilizar informações acessíveis ao público.
+            </p>
+            <p class="justified">
+                <span class="tab">
+                A fórmula de dano pode ser refinada e agora, com o dano base desacoplado da defesa a nossa nova versão da fórmula de dano experimental fica:
+            </p>
+            <div class="latex">\( f(x_{RES})=k''x_{RES}\cdot x_{BASE} \)</div>
+            <p class="justified">
+                onde \(k'' = (1-x_{DEF})k\)
+            </p>
+
+            <p class="justified">
+                <span class="tab">
+                    É coerente adotar um valor de defesa como um valor entre 0 e 1, ou entre 0% e 100%. Dessa forma é possível isolar o valor de \(x_{DEF}\) e pensá-lo como uma "constante de defesa" \(0\leq k_d \leq 1\), que muda apenas para inimigos diferentes: se o inimigo muda, a defesa muda. 
+                </span>
+            </p>
+
+            <p class="justified">
+                <span class="tab">
+                    Em alguns casos o valor de \(k''\) apresentou alterações, dependendo do inimigo. Ora, o nosso 'postulado base' é que a constante de correção \(k\) é fixa, então a mudança do valor de \(k''\) só depende da defesa do inimigo. 
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    A partir disso, para uma mesma skill, foram coletados dados do dano causado para diversos conjuntos de ataque, ataque especial e inimigos distintos. Diversas skills foram utilizadas para gerar uma grande variação no valor de \(k''\).
+                </span>
+            </p>            
+            <p class="justified">
+                <span class="tab">
+                    Essa estratégia trouxe uma análise muito precisa para diversos valores de \(k''\) e permitiu que fosse encontrado o valor da constante \(k\) e, por consequência, a defesa de diversos tipos de inimigos.
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    É importante ressaltar que esse modelo matemático utilizado precisou ser adaptado e divido entre três tipos de "fontes de dano": Dano de Skills, Dano de Comandos Básicos e Dano de Pet. Para cada fonte de dano uma constante de correção é utilizada.
+                    Também foi necessário adotar dois tipos de defesa utilizados pelos inimigos: a defesa comum, que age contra comandos básicos e ataques de pet, e a defesa especial, que age contra skills. Vale ressaltar que o ataque especial pareceu funcionar apenas
+                    em dano de skills.
+                </span>
+            </p>
+
+            <h3>A fórmula de dano</h3>
+
+            <p class="justified">
+                <span class="tab">
+                    Por fim, a análise estatística e dos dados forneceu resultados suficientes para obter a fórmula de dano:
+                </span>
+            </p>
+
+            <div class="latex-result">
+                \[
+                    d_0 =\left\{ \begin{array}{ll}
+                    0.007\times(\text{ataque} + \text{ataque especial})\times (1-\text{defesa especial})\times \text{dano base} & : \ \text{dano de skills} \\
+                    0.0168\times(\text{ataque})\times (1-\text{defesa})\times \text{dano base} & : \ \text{dano de ataques básicos} \\
+                    0.00477148\times(\text{ataque})\times (1-\text{defesa})\times \text{dano base} & : \ \text{dano de pets} \\
+                    \end{array} \right.
+                \]
+            </div>
+            
+            <div class="separator"></div>
+
+            <h3>Fatores adicionais</h3>
+            <p class="justified">
+                <span class="tab">
+                    A partir dessa fórmula de dano foi possível realizar testes simples e individuais para introduzir cada tipo de adição ao dano, como os buffs de dano, resistência a contaminação, dano de ataque pelas costas,
+                    dano crítico, quebra de defesa entre muitos outros efeitos. O jogo aparenta usar uma forma muito simples para se lidar com diferentes tipos de adições ao dano, que se baseia em uma função não linear com o produto
+                    entre cada tipo diferente de adição de dano, ou seja, o famoso Multiplicador! Esses multiplicadores foram calculados como:
+                </span>
+            </p>
+
+            <table>
+                <tr>
+                    <td>\[k_{\text{crit}}=\frac{(150 + \text{crit_dmg_%})}{100}\]</td>
+                    <td>\[k_{\text{buffs}}=\frac{(100 + \text{buffs_%})}{100}\]</td>
+                    <td>\[k_{\text{back}}=\frac{130 + \text{back_%} }{100}\]</td>
+                </tr>
+                <tr> 
+                    <td>\[k_{aerial}=1.5\] </td>
+                    <td>\[k_{\text{taint}}=\frac{(100 - \text{taint_%}+\text{resist_%})}{100}\]</td>
+                    <td>\[k_{\text{debuff_def}}=\frac{(100-\text{debuff_def_%})}{100}\]</td>
+                </tr>
+                <tr>
+                    <td>\[k_{\text{lv}} =\left\{ \begin{array}{cl}
+                        1 & : \ \text{char_lv}-\text{monst_lv} \leq5 \\
+                        \frac{100+2(\text{char_lv}-\text{monst_lv}-5)}{100} & : \ \text{char_lv}-\text{monst_lv} \gt 5 \\
+                        \end{array} \right.\] </td>
+                    <td>\[k_{enemy}=1\]</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <p class="justified">
+                onde \(k_\text{crit}\) é a contribuição do dano crítico para o dano final (o que mostra que o dano crítico possui um valor base de 50% no jogo); \(k_{\text{buffs}}\) é a contribução de todos os buffs (club gc, chase point, anel da segunda marcha, buffs de skills etc) para o dano final; \(k_{\text{back}}\) é a
+                contribuição do ataque pelas costas; \(k_{\text{aerial}}\) é a contribuição do dano causado a um inimigo que está no ar; \(k_{\text{taint}}\) é a contribução do debuff de contaminação e da resistência a contaminação; \(k_{\text{debuff_def}}\)
+                é a contribuição dos debuffs de quebra/redução de defesa; \(k_{\text{lv}}\) é a contribuição do nível do seu personagem (não é o nível chase) e o nível do monstro; \(k_{\text{enemy}}\) é a contribuição do dano causado a inimigos com buffs
+                de redução de dano, ou que possuem algum mecanismo que altera a forma como eles recebem dano.
+            </p>
+ 
+            <p class="justified">
+                <span class="tab">
+                    Os buffs de redução de dano que os inimigos possuem também são contabilizados na fórmula de dano através de uma contribuição \(k_{enemy}\). Caso não haja esse buff, o valor de \(k_{enemy}=1\), caso contrário ele funciona da seguinte forma:
+                </span>
+            </p>
+            
+            <table>
+                <tr>
+                    <th colspan="2">Buff</th>
+                    <th>Correção</th>
+                    <th>Observação</th>
+                </tr>
+                <tr>
+                    <td><img src="../images/icons/resist/increased_defense.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Aumentar Defesa</td>
+                    <td>\(k_{enemy}=0.8\)</td>
+                    <td>Se aplica a qualquer fonte de dano (comandos básicos, skill ou pet).</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/icons/resist/damage_reduction.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Redução de Dano</td>
+                    <td>\(k_{enemy}=0.7\)</td>
+                    <td>Se aplica a dano de comandos básicos e ataques de pet.</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/icons/resist/special_damage_reduction.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Redução de Dano Especial</td>
+                    <td>\(k_{enemy}=0.7\)</td>
+                    <td>Se aplica apenas a dano de skills.</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/icons/resist/cdmg_reduction.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Redução de Dano Crítico</td>
+                    <td>\(k_{\text{crit}}=\frac{(150 + \text{crit_dmg_%} - 150)}{100}\)</td>
+                    <td>Reduz seu dano crítico em 150%.</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/icons/resist/air.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Redução de Dano Aéreo</td>
+                    <td>\(k_{aerial}=1\)</td>
+                    <td>Faz com que o dano aéreo fique idêntico ao dano no chão.</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/monsters/blue_aura.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Aumento de Defesa Geral</td>
+                    <td>\(k_{enemy}=0.333\)</td>
+                    <td>Se aplica a qualquer fonte de dano (comandos básicos, skill ou pet).</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/monsters/purple_aura.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Aumento de Defesa contra Habilidades Especiais</td>
+                    <td>\(k_{enemy}=0.1\)</td>
+                    <td>Se aplica apenas a dano de skills.</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/monsters/red_aura.png" width="48" height="48" oncontextmenu="return false;"></td>
+                    <td>Aumento de Defesa contra comandos básicos/pet</td>
+                    <td>\(k_{enemy}=0.1\)</td>
+                    <td>Se aplica a dano de comandos básicos e ataques de pet.</td>
+                </tr>
+            </table>
+
+            <p class="justified">
+                <span class="tab">
+                    No final de todo o cálculo de dano é somado o dano de lança infernal (Hell Spear - \(HS\)). É possível verificar pela fórmula, que a Lança Infernal não aproveita de NENHUM buff de dano, ataque pelas costas, dano crítico, etc. Por conta disso a lança infernal
+                    acaba se tornado uma propriedade ruim para a maioria absoluta dos conteúdos do jogo.
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    No entanto, a Lança Infernal altera temporariamente o valor \(k_{enemy}\), fazendo com que alguns inimigos recebam muito mais dano da lança infernal, porém isso funciona apenas para alguns inimigos muito específicos, como o Coração do Absoluto no Vazio 3: Pesadelo. 
+                </span>
+            </p>
+            <p class="justified">
+                <span class="tab">
+                    Ainda há o dano causado aos portais dentro de algumas dungeons, como no Caminho Abissal. Esses portais não seguem a fórmula de dano, eles sempre recebem um dano constante pré-definido.
+                </span>
+            </p>
+            <h3>A fórmula final</h3>
+            <p class="justified">
+                <span class="tab">
+                    Unificando todas essas correções, a fórmula de dano do jogo pode ser escrita como:
+                </span>
+            </p>
+
+            <div class="latex-result">
+                \[
+                    d_0 =\left\{ \begin{array}{ll}
+                    0.007\times(\text{ataque} + \text{ataque especial})\times (1-\text{defesa especial})\times \text{dano base} & : \ \text{dano de skills} \\
+                    0.0168\times(\text{ataque})\times (1-\text{defesa})\times \text{dano base} & : \ \text{dano de ataques básicos} \\
+                    0.00477148\times(\text{ataque})\times (1-\text{defesa})\times \text{dano base} & : \ \text{dano de pets} \\
+                    \end{array} \right.
+                \]
+            </div>
+
+            <div class="latex-final">
+                \[
+                    d_{\text{final}}=(d_0\frac{k_{\text{crit}}   k_{\text{buffs}}   k_{\text{back}}   k_{\text{aerial}}   k_{\text{taint}}   k_{\text{lv}}   k_{enemy}} {k_{\text{debuff_def}}}+\text{HS})
+                \]
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="ending">
+                <h3><span class="yellow">Considerações Finais</span></h3>
+                
+                <p>Existem algumas conclusões importantes a serem tiradas desses valores:</p>
+
+                <ul class="conclusion-list">
+                    <li>
+                        <strong>Valores base "escondidos":</strong>
+                        <p>
+                            Algumas propriedades possuem valores base escondidos no jogo. Quando você cria uma conta do zero, seu dano crítico base será 50% (\( \text{dano normal} \times 1.5 \)), mesmo que tenha 0% em status.
+                        </p>
+                        <p>
+                            Outra propriedade com valor base escondido é o ataque pelas costas. Seu valor base é 30% (\( \text{dano normal} \times 1.3 \)), mesmo que tenha 0% em status.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Equivalência de ataques:</strong>
+                        <p>
+                            O Ataque e o Ataque Especial possuem o mesmo peso para skills. Ganhar 100 de Ataque ou 100 de Ataque Especial resultará exatamente no mesmo aumento de dano final para suas habilidades.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Saturação de status:</strong>
+                        <p>
+                            Quanto mais você investe em um único status, menor é a percepção real de ganho. Por exemplo: adicionar 10% de dano crítico quando você tem 500% representa um ganho de \( \frac{10}{500 +150} \approx 1.5 \text{%} \) de dano final. Porém, adicionar os mesmos 10% quando você já tem 
+                            900% representa um ganho de apenas \( \frac{10}{900 + 150} \approx 0.95 \text{%} \) de dano final. Por conta disso, jogadores no <i>endgame</i> (1000%+ de dano crítico) sentem pouca diferença ao aumentar seus status.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Separação de buffs:</strong>
+                        <p>
+                            Na maioria dos jogos os buffs de dano são multiplicados entre si, então diferentes buffs possuem contribuições próprias na composição do dano. Por exemplo:
+                            \[
+                                \text{final_dmg} = \text{raw_dmg} \times (1 + \text{boss_dmg}) \times (1 + \text{skill_dmg}) \times (1 + \text{skill_tier_dmg}) \times \cdots.
+                            \]
+                        </p>
+                        <p>
+                            No Grand Chase, porém, isso não ocorre. Os diferentes buffs são somados (ao invés de multiplicados), fazendo com que 10% de dano de todas as habilidades seja literalmente idêntico a 10% de dano causado a chefes, independente da quantidade de buffs que você possui.
+                        </p>
+                        <p>
+                            A diferença entre os buffs está somente em onde são aplicados: dano causado a chefes só se aplica a chefes, dano de todas as habilidades só se aplica a habilidades e assim por diante.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Diluição de buffs:</strong>
+                        <p>
+                            Como os buffs no jogo somam-se entre si antes de multiplicar o dano, um buff de 10% não aumenta seu dano final em 10%, por exemplo. Se você já possui 50% em buffs e recebe mais 10%, o ganho real percebido será de apenas 
+                            \( \frac{10}{100 + 50} \approx 6.66\text{%} \) no dano final.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Porcentagem de dano:</strong>
+                        <p>
+                            Na maioria dos jogos é comum a apresentação do valor de dano como 'essa habilidade causa \(309 \text{%}\) de dano físico', por exemplo. Note que na fórmula de dano, sempre temos uma constante de correção ( \(0.007\) para skills, \(0.0168\) para comandos básicos e \(0.000477148\) para pets). É possível 
+                            escrever o dano base do jogo usando esse valor, por exemplo:<br><br>
+                            A skill Asas do Paraíso causa \(364.864\) de dano base. Podemos reescrever como: \(364.864 \times 0.007 \times 100 = 255.4048 \text{%}\) de (Ataque + Ataque Especial).
+                        </p>
+                    </li>
+ 
+                </ul>
+            </div>
+            <p class="justified">
+                <span class="tab">
+                Por fim, ao invés de precisar se preocupar em trabalhar com toda essa matemática, você pode simplesmente utilizar minha <a href="../index.html" class="inline-link" target="_blank" rel="noopener noreferrer">calculadora de dano</a>!
+                </span>
+            </p>
+        </div>
+    </main>
+
+    <button id="btnTop" class="btn-scroll-top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Roadmap - Grand Chase</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../general-style.css" />
+  <link rel="stylesheet" href="roadmap-style.css" />
+  <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon" />
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+
+  <script src="../alerts.js" defer></script>
+  <script src="script.js" defer></script>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+  <meta name="view-transition" content="same-origin" />
+</head>
+
+<body>
+    <a href="https://thearesius.github.io/Damage-Calculator-EN/roadmap/" class="floating-lang-btn" title="Switch to English">
+        <img src="../images/usa.png" alt="English Flag">
+    </a>
+    <button id="menuTrigger" class="floating-menu-btn" title="Menu Principal">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <div id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <h3 class="menu-title">Grand Chase Tools<br><span>Aresius</span></h3>
+            <button id="menuClose" class="menu-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+
+        <div class="menu-content">
+            <div class="menu-group">
+                <span class="group-title">Navegação</span>
+
+                <a href="../index.html" class="menu-link">
+                    <ion-icon name="calculator-outline"></ion-icon>
+                    Calculadora de Dano
+                </a>
+                
+                <a href="../damage-info/index.html" class="menu-link">
+                    <ion-icon name="book-outline"></ion-icon>
+                    Como funciona o Dano?
+                </a>
+                
+
+                <a href="index.html" class="menu-link">
+                    <ion-icon name="map-outline"></ion-icon>
+                    Roadmap
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Apoio / Donate</span>
+                
+                <a href="#" class="menu-link" onclick="openLivePix(); return false;">
+                    <ion-icon name="qr-code-outline"></ion-icon>
+                    LivePix (QR Code)
+                </a>
+
+                <a href="https://ko-fi.com/TheAresius" target="_blank" class="menu-link">
+                    <img src="https://storage.ko-fi.com/cdn/cup-border.png" class="support-icon kofi-wiggle" alt="Ko-fi">
+                    Ko-fi
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Social</span>
+                
+                <a href="https://linktr.ee/thearesius" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/linktree.ico" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    LinkTree
+                </a>
+                
+                <a href="https://github.com/TheAresius/Damage-Calculator-BR" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/github.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Projeto no GitHub
+                </a>
+                <a href="http://discordapp.com/users/289929075886129152" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/discord.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Discord: aresius4407
+                </a>
+                <a href="https://www.youtube.com/@Aresius" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/youtube.png" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">
+                    Canal no YouTube
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <span class="group-title">Extras</span>
+                <a href="https://docs.google.com/spreadsheets/d/1FGxKHQuwz_Jx-GdYd6647FiAE9UbS6mZgufXor9_DZk/edit#gid=722314000" target="_blank" class="menu-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">   
+                    Tabela de dano base
+                </a>
+
+                <a href="https://eitur.github.io/gcc-card/br/" target="_blank" class="menu-link">
+                    <img src="../images/icons/extras/card.ico" width="19.2" height="19.2" oncontextmenu="return false" style="margin-right: 12px;">   
+                    Gerenciador de Cartas (by daughterly)
+                </a>
+            </div>
+
+        </div>
+
+        <div class="menu-footer">
+            <p>Desenvolvido por <strong>Aresius</strong></p>
+            
+            <div class="credits-container">
+                <span class="credits-label">Agradecimentos Especiais</span>
+                <p class="credits-names">
+                    DsinC &bull; i &bull; Esawa
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2026 Grand Chase Tools
+            </p>
+            
+        </div>
+    </div>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <div class="navigation-header">
+    
+    </div>
+
+    <main>
+        <!--
+        
+        -->
+        <div class="roadmap-container">
+            <div class="roadmap-header">
+                <h1>Roadmap</h1>
+                <p>Acompanhe o desenvolvimento e as novidades que estão chegando!</p>
+            </div>
+
+            <section class="roadmap-section">
+                <div class="section-title title-dev">
+                    <ion-icon name="construct-outline"></ion-icon>
+                    Em Desenvolvimento
+                </div>
+                <div class="roadmap-grid">
+                    
+                    <div class="roadmap-card card-dev">
+                        <div class="card-header">
+                            <h3 class="card-title">Database de dano</h3>
+                            <span class="card-tag tag-feature">Funcionalidade</span>
+                        </div>
+                        <p class="card-desc">Adicionar uma página de descrição do dano base de todas as habilidades do jogo.</p>
+                        <div class="progress-container" title="80% Concluído">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-card card-dev">
+                        <div class="card-header">
+                            <h3 class="card-title">Reformulação de todas<br> as ferramentas</h3>
+                            <span class="card-tag tag-fix">Melhoria</span>
+                        </div>
+                        <p class="card-desc">Reformular a funcionalidade e adaptar todas as ferramentas ao novo estilo de design.</p>
+                        <div class="progress-container" title="20% Concluído">
+                            <div class="progress-bar" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap-section">
+                <div class="section-title title-plan">
+                    <ion-icon name="map-outline"></ion-icon>
+                    Planejado
+                </div>
+                <div class="roadmap-grid">
+
+                    <div class="roadmap-card card-plan">
+                        <div class="card-header">
+                            <h3 class="card-title">Tudo em um só lugar</h3>
+                            <span class="card-tag tag-fix">Melhoria</span>
+                        </div>
+                        <p class="card-desc">Integrar todas as ferramentas em um único site para melhor navegação.</p>
+                    </div>
+
+                    <div class="roadmap-card card-plan">
+                        <div class="card-header">
+                            <h3 class="card-title">Calculadora de EXP</h3>
+                            <span class="card-tag tag-content">Nova Ferramenta</span>
+                        </div>
+                        <p class="card-desc">Ferramenta para calcular a quantidade de EXP e idas necessárias para atingir determinado nível.</p>
+                    </div>
+
+                    <div class="roadmap-card card-plan">
+                        <div class="card-header">
+                            <h3 class="card-title">Guias do jogo</h3>
+                            <span class="card-tag tag-content">Nova Ferramenta</span>
+                        </div>
+                        <p class="card-desc">Adição de guias de sistemas do jogo, dungeons, equipamentos etc.</p>
+                    </div>
+
+                    <div class="roadmap-card card-plan">
+                        <div class="card-header">
+                            <h3 class="card-title">Simulador de status</h3>
+                            <span class="card-tag tag-content">Nova Ferramenta</span>
+                        </div>
+                        <p class="card-desc">Ferramenta para configurar, salvar e simular a build completa de personagens (equipamentos, runas, títulos etc).</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="roadmap-section">
+                <div class="section-title title-done">
+                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                    Concluído Recentemente
+                </div>
+                <div class="roadmap-grid">
+
+                    <div class="roadmap-card card-done">
+                        <div class="card-header">
+                            <h3 class="card-title">Reformulação visual<br>da calculadora de dano</h3>
+                            <span class="card-tag tag-feature">UI/UX</span>
+                        </div>
+                        <p class="card-desc">Todas as funções e detalhes visuais foram adaptados para um design mais moderno e intuitivo.</p>
+                    </div>
+
+                    <div class="roadmap-card card-done">
+                        <div class="card-header">
+                            <h3 class="card-title">Cálculo de dano base</h3>
+                            <span class="card-tag tag-feature">Funcionalidade</span>
+                        </div>
+                        <p class="card-desc">Implementado um sistema onde o usuário insere o dano final e descobre o dano base da skill.</p>
+                    </div>
+
+                    <div class="roadmap-card card-done">
+                        <div class="card-header">
+                            <h3 class="card-title">Tabela selecionável de buffs</h3>
+                            <span class="card-tag tag-feature">Funcionalidade</span>
+                        </div>
+                        <p class="card-desc">Adicionada uma opção para selecionar os buffs de forma intuitiva, sem precisar calcular a quantidade de buffs manualmente.</p>
+                    </div>
+
+                    <div class="roadmap-card card-done">
+                        <div class="card-header">
+                            <h3 class="card-title">Comparação de dano</h3>
+                            <span class="card-tag tag-feature">Funcionalidade</span>
+                        </div>
+                        <p class="card-desc">Adicionada uma opção para comparar o dano entre duas builds diferentes.</p>
+                    </div>
+
+                    <div class="roadmap-card card-done">
+                        <div class="card-header">
+                            <h3 class="card-title">Melhoria no histórico</h3>
+                            <span class="card-tag tag-fix">Melhoria</span>
+                        </div>
+                        <p class="card-desc">Adicionadas opções para favoritar, alterar nome, carregar e excluir cálculos prévios que estejam no histórico. Os cálculos não serão mais removidos automaticamente ao atualizar a página.</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <button id="btnTop" class="btn-scroll-top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+</body>
+</html>

@@ -1,9 +1,12 @@
 // file to make translation easier
+const stringsErrorInvalidData = "Algo de errado não está certo. Reveja os valores inseridos.";
+const stringsErrorHarrier = "Você não pode aplicar o Debuff de Contaminação neste monstro em específico.\nReveja os valores inseridos.";
+const stringsErrorDef = "O valor de ignorar defesa utilizado é maior ou igual a 100%. Por conta disso não é possível calcular o dano.\nO valor zero irá aparecer no histórico."
 
-const stringsErrorInvalidData =
-  "Algo de errado não está certo. Reveja os valores inseridos.";
-const stringsErrorHarrier =
-  "Você não pode aplicar o Debuff de Contaminação neste monstro em específico. Reveja os valores inseridos.";
+const stringsErrorMissingDmg = "Por favor, insira o valor do dano.";
+const stringsErrorDataError = "Existem campos inválidos (marcados em vermelho). Corrija-os antes de prosseguir.";
+const stringsErrorInvalidDmg = "Impossível calcular com os status atuais (dano simulado inválido).";
+
 const stringsComboDamage = "Dano de comando básico";
 const stringsSkillDamage = "Dano de skill";
 const stringsPetDamage = "Dano de pet";
@@ -14,14 +17,14 @@ const stringDef3 = "- Defesa contra habilidades: ";
 const stringIsBoss = "Este inimigo é considerado um chefe. ";
 const stringIsNotBoss = "Este inimigo <b>não</b> é considerado um chefe. ";
 const stringEstHP = " - HP (estimado): ";
-const stringScaleHP = " (o HP deste inimigo é aumentado em 22% para cada membro adicional do grupo)."
+const stringScaleHP = " (o HP deste inimigo é aumentado para cada membro adicional do grupo)."
 const stringDelay = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/delay.png' alt='Delay Icon' class='modal-icon'>Este inimigo é vulnerável a delay de habilidades.</div>"
 const stringNoDelay = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/no-delay.png' alt='Delay Icon' class='modal-icon'>Este inimigo não é vulnerável a delay de habilidades.</div>"
 const stringFreeze = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/freeze.png' alt='Delay Icon' class='modal-icon'>Este inimigo é vulnerável a congelamento/frame freeze de pets.</div>"
 const stringNoFreeze = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/no-freeze.png' alt='Delay Icon' class='modal-icon'>Este inimigo não é vulnerável a congelamento/frame freeze de pets</div>"
 
 
-// -- historyListStrings
+// historyListStrings
 const stringsHistoryListTitle = "Histórico de Cálculos";
 const stringsHistoryListCharacterLevel = "Nível do personagem";
 const stringsHistoryListMonsterLevel = "Nível do monstro";
@@ -37,7 +40,10 @@ const stringsHistoryListBossDmg = "Dano causado a chefes";
 const stringsHistoryListBuffs = "Outros buffs";
 const stringsHistoryListBAtk = "Ataque pelas costas";
 const stringsHistoryListDamageValue = "Dano base";
-const stringsHistoryListDef = "Debuffs de quebrar defesa"
+const stringsHistoryListDef = "Debuffs de defesa";
+const stringsHistoryListSpecificTier = "Buffs de tier específica";
+const stringsHistoryListSpecificSkill = "Buffs de skill específica";
+
 
 const stringsNormalHitDamage = "Hit normal";
 const stringsCriticalHitDamage = "Hit crítico";
