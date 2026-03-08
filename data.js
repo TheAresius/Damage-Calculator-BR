@@ -1935,6 +1935,13 @@ window.buffsData = [
         stats: {ignore_def: 7}  
     },
     { 
+        id: "rage_cutter", 
+        name: "Retalhar",
+        category: "defense",
+        icon: "images/icons/defense/rage_cutter.png", 
+        stats: {ignore_def: 5}  
+    },
+    { 
         id: "block", 
         name: "Block (Defensor)",
         category: "defense",
@@ -1942,7 +1949,14 @@ window.buffsData = [
         stats: {ignore_def: 5}  
     },
     { 
-        id: "mystic flow", 
+        id: "pretty_virus", 
+        name: "Virus Glamuroso",
+        category: "defense",
+        icon: "images/icons/defense/pretty_virus.png", 
+        stats: {ignore_def: 5}  
+    },
+    { 
+        id: "mystic_flow", 
         name: "Prisma Brilhante",
         category: "defense",
         icon: "images/icons/defense/mystic_flow.png", 
