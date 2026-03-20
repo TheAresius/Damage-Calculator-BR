@@ -1357,7 +1357,7 @@ window.enemyData = {
             defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
             defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>3.185M (127 barras)</span></span>.<br>"+
+                        "<span class='tab'>- Normal: <span class='yellow'>3.18M (127 barras)</span></span>.<br>"+
                         "<span class='tab'>- Master: <span class='yellow'>-</span></span><br>"+stringScaleHP
         },
         extra: ``,
