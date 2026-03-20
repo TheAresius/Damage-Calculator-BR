@@ -224,6 +224,10 @@ function calculate() {
     DEF = 0.5;
     sDEF = 39/64;
     harrier_debuff = 30;
+  } else if (enemy==="87" || enemy==="88") {
+    DEF = 2/3;
+    sDEF = 71/96;
+    harrier_debuff = 30;
   }
 
   var selectedOption = document.getElementById('Enemy_list').value;
@@ -275,7 +279,7 @@ if (def_pierce < 0 || isNaN(def_pierce) || def_pierce >= 100) {
     hasError = true;
 }
 
-const validHarrierEnemies = ["0","15","18","19","20","21","35","36","37","38","44","45","46","47","48","49","50","51","52","73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86"];
+const validHarrierEnemies = ["0","15","18","19","20","21","35","36","37","38","44","45","46","47","48","49","50","51","52","73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88"];
 
 if (harrier_debuff > 0 && !validHarrierEnemies.includes(String(enemy))) {
     showAlert("Atenção", stringsErrorHarrier, "warning", "Ok");

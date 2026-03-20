@@ -1235,7 +1235,7 @@ window.enemyData = {
                         "<span class='tab'>- Master: <span class='yellow'>12.62M</span></span>.<br>"+stringScaleHP
         },
         extra: `
-                - A Galinha de Fogo apenas corre aleatoriamente pelo mapa.
+                - A Galinha de Fogo apenas corre aleatoriamente pelo mapa.<br>
                 - Aleatoriamente a Galinha de Fogo entrará em estado de fúria e atacará com um grande dano.<br>
                 - Enquanto estiver em estado de fúria, a Galinha de Fogo perderá todas suas defesas e receberá 300% de dano a mais.
                `,
@@ -1255,7 +1255,7 @@ window.enemyData = {
                         "<span class='tab'>- Master: <span class='yellow'>12.62M</span></span>.<br>"+stringScaleHP
         },
         extra: `
-                - A Galinha de Fogo apenas corre aleatoriamente pelo mapa.
+                - A Galinha de Fogo apenas corre aleatoriamente pelo mapa.<br>
                 - Aleatoriamente a Galinha de Fogo entrará em estado de fúria e atacará com um grande dano.<br>
                 - Enquanto estiver em estado de fúria, a Galinha de Fogo perderá todas suas defesas e receberá 300% de dano a mais.
                `,
@@ -1333,6 +1333,38 @@ window.enemyData = {
         IsBoss: true
     },
 
+    "87": {
+        name: "Ereb",
+        description: stringIsBoss + "Está presente na Trilha Obscurecida.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: stringEstHP + "<br>"+
+                        "<span class='tab'>- Normal: <span class='yellow'>2.22M(89 barras)</span></span>.<br>"+
+                        "<span class='tab'>- Master: <span class='yellow'>-</span></span><br>"+stringScaleHP
+        },
+        extra: ``,
+        path: 'images/monsters/solene/path/ereb.png',
+        IsBoss: true
+    },
+
+    "88": {
+        name: "O Esquecido",
+        description: stringIsBoss + "Está presente na Trilha Obscurecida.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: stringEstHP + "<br>"+
+                        "<span class='tab'>- Normal: <span class='yellow'>3.185M (127 barras)</span></span>.<br>"+
+                        "<span class='tab'>- Master: <span class='yellow'>-</span></span><br>"+stringScaleHP
+        },
+        extra: ``,
+        path: 'images/monsters/solene/path/forgotten_one.png',
+        IsBoss: true
+    },
+
 };
 
 window.categoryMap = {
@@ -1341,6 +1373,7 @@ window.categoryMap = {
     "Solene - Capela da Eternidade": ["73", "74", "75"],
     "Solene - Salão da Harmonia": ["76", "77", "78", "79", "80", "81"],
     "Solene - Santuário das Bestas Divinas": ["82", "83", "84", "85", "86"],
+    "Solene - Trilha Obscurecida": ["87", "88"],
     "Vazio 1: Invasão": ["18"],
     "Vazio 2: Contaminação": ["19", "20", "21"],
     "Vazio 3: Pesadelo": ["44", "45", "46", "47", "48", "49", "50", "51", "52"],
