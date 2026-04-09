@@ -1283,7 +1283,7 @@ window.enemyData = {
                 Após voar para trás e espalhar penas de fogo pelo mapa / cuspir bolas de fogo, o Surtrark poderá colocar uma marca no jogador durante 1 segundo. Após 1 segundo, se o jogador não estiver em estado de i-frame (durante a esquiva ou durante uma skill), o Surtrark irá transformá-lo em galinha.
                 <br></span>
                 <span class='tab'>
-                Em seguida, o Surtrak começará a acumular energia no meio do mapa (indicado por uma barra acima do chefe) e lançará uma onda de energia pelo mapa. Após esse ataque, o Surtrak ficará enfraquecido, perderá todas suas defesas e receberá 100% de dano a mais.
+                Em seguida, o Surtrark começará a acumular energia no meio do mapa (indicado por uma barra acima do chefe) e lançará uma onda de energia pelo mapa. Após esse ataque, o Surtrark ficará enfraquecido, perderá todas suas defesas e receberá 100% de dano a mais.
                 </span>
 
                 <br>
@@ -1291,7 +1291,7 @@ window.enemyData = {
                 <b>※ Abaixo de 60% de HP</b>
                 <br>
                 <span class='tab'>
-                O Surtrark se teleportará para o meio do mapa e fará bolas de fogo cairem do céu. Ele recuperará HP para cada hit que as bolas de fogo causarem nos jogadores. Após finalizar esse ataque, o Surtrak lançará uma onda de energia pelo mapa.
+                O Surtrark se teleportará para o meio do mapa e fará bolas de fogo cairem do céu. Ele recuperará HP para cada hit que as bolas de fogo causarem nos jogadores. Após finalizar esse ataque, o Surtrark lançará uma onda de energia pelo mapa.
                 </span>
                `,
         path: 'images/monsters/solene/sanctuary/surtrark_of_flames.png',
@@ -1318,7 +1318,7 @@ window.enemyData = {
                 Após voar para trás e espalhar penas de fogo pelo mapa / cuspir bolas de fogo, o Surtrark poderá colocar uma marca no jogador durante 1 segundo. Após 1 segundo, se o jogador não estiver em estado de i-frame (durante a esquiva ou durante uma skill), o Surtrark irá transformá-lo em galinha.
                 <br></span>
                 <span class='tab'>
-                Em seguida, o Surtrak começará a acumular energia no meio do mapa (indicado por uma barra acima do chefe) e lançará uma onda de energia pelo mapa. Após esse ataque, o Surtrak ficará enfraquecido, perderá todas suas defesas e receberá 100% de dano a mais.
+                Em seguida, o Surtrark começará a acumular energia no meio do mapa (indicado por uma barra acima do chefe) e lançará uma onda de energia pelo mapa. Após esse ataque, o Surtrark ficará enfraquecido, perderá todas suas defesas e receberá 100% de dano a mais.
                 </span>
 
                 <br>
@@ -1326,7 +1326,7 @@ window.enemyData = {
                 <b>※ Abaixo de 60% de HP</b>
                 <br>
                 <span class='tab'>
-                O Surtrark se teleportará para o meio do mapa e fará bolas de fogo cairem do céu. Ele recuperará HP para cada hit que as bolas de fogo causarem nos jogadores. Após finalizar esse ataque, o Surtrak lançará uma onda de energia pelo mapa.
+                O Surtrark se teleportará para o meio do mapa e fará bolas de fogo cairem do céu. Ele recuperará HP para cada hit que as bolas de fogo causarem nos jogadores. Após finalizar esse ataque, o Surtrark lançará uma onda de energia pelo mapa.
                 </span>
                `,
         path: 'images/monsters/solene/sanctuary/surtrark_of_flames.png',
@@ -1341,10 +1341,13 @@ window.enemyData = {
             defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
             defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>2.22M(89 barras)</span></span>.<br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>-</span></span><br>"+stringScaleHP
+                        "<span class='tab'>- Normal: <span class='yellow'>2.22M (89 barras)</span>.</span><br>"+
+                        "<span class='tab'>- Master: <span class='yellow'>9.93M (397 barras)</span></span><br>"+stringScaleHP
         },
-        extra: ``,
+        extra: `-<span class='tab'>Ao chegar em 70% do HP, Ereb poderá usar uma mecânica de danger e passará a acumular energia. Sua defesa será aumentada e receberá apenas 50% do dano usual até que ele libere sua energia em uma explosão.</span><br>
+                -<span class='tab'>Após o primeiro danger, Ereb ficará acumulando energia a todo momento. Ao chegar na carga máxima, ele poderá usar uma investida contra o jogador que causará muito dano.</span><br>
+                -<span class='tab'>Ao chegar em 50% de HP, Ereb poderá usar uma mecânica de danger e teleportará para a extremidade oposta do mapa (se estiver do lado direito, ele irá para o lado esquerdo e vice-versa). Após teleportar ele disparará projéteis de energia que perseguirá o jogador.</span>
+               `,
         path: 'images/monsters/solene/path/ereb.png',
         IsBoss: true
     },
@@ -1357,10 +1360,13 @@ window.enemyData = {
             defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
             defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>3.18M (127 barras)</span></span>.<br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>-</span></span><br>"+stringScaleHP
+                        "<span class='tab'>- Normal: <span class='yellow'>3.18M (127 barras)</span></span><br>"+
+                        "<span class='tab'>- Master: <span class='yellow'>17.35M (694 barras)</span></span><br>"+stringScaleHP
         },
-        extra: ``,
+        extra: `
+                -<span class='tab'>Ao chegar em 70% do HP, O Esquecido usará uma mecânica de danger de tempos em tempos. Ele irá se teleportar para onde o jogador está e causará uma sequência de 3 ondas de energia: uma no mapa todo e uma para cada lado do mapa.</span><br>
+                -<span class='tab'>Após a mecânica de danger, ele retornará ao padrão usual de ataques.
+               `,
         path: 'images/monsters/solene/path/forgotten_one.png',
         IsBoss: true
     },
@@ -2126,6 +2132,13 @@ window.buffsData = [
         category: "resist",
         icon: "images/monsters/red_aura.png", 
         stats: {resist_normal: -90}  
+    },
+    { 
+        id: "ereb_resist", 
+        name: "Acúmulo de Energia - Ereb",
+        category: "resist",
+        icon: "images/icons/resist/ereb_resist.jpg", 
+        stats: {resist_all: -50}  
     },
     
 ];

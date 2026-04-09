@@ -350,9 +350,9 @@ if (hasError) {
         final_multi = 0
       }
 
-      var effecttive_ATK = ATK;
+      var effective_ATK = ATK;
       var final_dmg =
-        ((effecttive_ATK *
+        ((effective_ATK *
           (1 - DEF) *
           ATK_factor *
           skill_multi *
@@ -376,9 +376,9 @@ if (hasError) {
         special_buff_multi += specific_tier / 100;
       }
 
-      var effecttive_ATK = ATK + sATK;
+      var effective_ATK = ATK + sATK;
       var final_dmg =
-        ((effecttive_ATK *
+        ((effective_ATK *
           (1 - sDEF) *
           sATK_factor *
           skill_multi *
@@ -393,9 +393,9 @@ if (hasError) {
         final_multi = 0
       }
 
-      var effecttive_ATK = ATK;
+      var effective_ATK = ATK;
       var final_dmg =
-        ((effecttive_ATK *
+        ((effective_ATK *
           (1 - DEF) *
           Pet_factor *
           skill_multi *
