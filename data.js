@@ -301,7 +301,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                     "<span class='tab'>- Sentinela do Vazio: <span class='yellow'>124k</span></span>.<br>"+
                     "<span class='tab'>- Demolidor do Vazio: <span class='yellow'>672k</span></span>."
@@ -320,7 +319,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- 2° fase <span class='yellow'>2.51M</span></span>.<br>"+
                         "<span class='tab'>- 3° fase <span class='yellow'>4.36M</span></span>.<br>"+
@@ -340,11 +338,10 @@ window.enemyData = {
                                        "Há um debuff de 20% de contaminação neste calabouço. O debuff já está aplicado automaticamente na calculadora.<br>"+
                                        "O buff adquirido do Executor do Vazio, presente nas fases 2, 3 e 4 é de <span class='yellow'>200%</span>. Adicione esse valor através do botão '+', caso deseje.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + " - HP (estimado):<br>"+
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            health: " - HP (estimado):<br>"+
                         "<span class='tab'>- 2° fase <span class='yellow'>25.08M (1003 barras)</span></span>.<br>"+
                         "<span class='tab'>- 3° fase <span class='yellow'>50.12M (2005 barras)</span></span>.<br>"+
                         "<span class='tab'>- 4° fase <span class='yellow'>70.18M (2807 barras)</span></span>."
@@ -674,10 +671,9 @@ window.enemyData = {
         name: "Coração do Absoluto - parte de baixo do mapa",
         description: stringIsNotBoss + "Está presente na parte inferior do primeiro estágio do Vazio (Pesadelo).<br><b>Apenas alguns debuffs conseguem quebrar a defesa deste inimigo.</b>",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>90.00%</span>",
+            defense1: stringDef1 + "<span class='yellow'>90.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>90.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
             health: stringEstHP + "<span class='yellow'>2.10M </span>"
         },
         extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
@@ -690,10 +686,9 @@ window.enemyData = {
         name: "Coração do Absoluto (enfraquecido) - parte de baixo do mapa ",
         description: stringIsNotBoss + "Está presente na parte inferior do primeiro estágio do Vazio (Pesadelo).<br><b>Apenas alguns debuffs conseguem quebrar a defesa deste inimigo. </b>",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>0.00%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>69.69%</span>",
+            defense1: stringDef1 + "<span class='yellow'>70.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>70.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>28.26%</span>",
             health: stringEstHP + "<span class='yellow'>2.10M </span>"
         },
         extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
@@ -706,10 +701,9 @@ window.enemyData = {
         name: "Coração do Absoluto - parte de cima do mapa",
         description: stringIsNotBoss + "Está presente na parte superior do primeiro estágio do Vazio (Pesadelo).<br><b>Apenas alguns debuffs conseguem quebrar a defesa deste inimigo. </b>",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>90.00%</span>",
+            defense1: stringDef1 + "<span class='yellow'>90.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>90.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>92.18%</span>",
             health: stringEstHP + "<span class='yellow'>7.30M </span>"
         },
         extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
@@ -722,10 +716,9 @@ window.enemyData = {
         name: "Coração do Absoluto (enfraquecido) - parte de cima do mapa",
         description: stringIsNotBoss + "Está presente na parte superior do primeiro estágio do Vazio (Pesadelo).<br><b>Apenas alguns debuffs conseguem quebrar a defesa deste inimigo. </b>",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>0.00%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>69.69%</span>",
+            defense1: stringDef1 + "<span class='yellow'>70.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>70.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>28.26%</span>",
             health: stringEstHP + "<span class='yellow'>7.30M </span>"
         },
         extra: "- O Coração do Absoluto irá invocar diversos monstros enquanto estiver vivo. É necessário derrotar 5 'Invasores do Vazio' para que o inimigo '???' comece a carregar energia e disparar contra o Coração do Absoluto.<br>"+
@@ -921,10 +914,9 @@ window.enemyData = {
         name: "Duel Pon Zec, o Vingador",
         description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<span class='yellow'>46.25M (1850 barras)</span>"
         },
         extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas. Você terá 10 segundos para interromper cada casting.<br>"+
@@ -939,10 +931,9 @@ window.enemyData = {
         name: "Duel Pon Zec, o Vingador (enfraquecido)",
         description: stringIsBoss + "Está presente no último estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>59.84%</span>",
+            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>68.75%</span>",
             health: stringEstHP + "<span class='yellow'>46.25M (1850 barras)</span>"
         },
         extra: "- Após ~45 segundos, Duel executará a mecânica de 'casting' até quatro vezes seguidas. Você terá 10 segundos para interromper cada casting.<br>"+
@@ -960,7 +951,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: ""
         },
         extra: "- Os efeitos aleatórios do estágio só serão aplicados depois de ~7 segundos do início do estágio, portanto é necessário que o grupo consiga causar o maior dano possível em todos os monstros durante esse período, para evitar que os efeitos de redução de dano apareçam nos inimigos.<br>"+
@@ -979,7 +969,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Estágio 3: <span class='yellow'>52.82M (2165 barras)</span></span>.<br>"+
                         "<span class='tab'>- Estágio 9: <span class='yellow'>72.50M (2900 barras)</span></span>.<br>"
@@ -996,7 +985,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Estágio 5: <span class='yellow'>14.68M</span></span>.<br>"+
                         "<span class='tab'>- Estágio 11: <span class='yellow'>21.12M</span></span>."
@@ -1015,10 +1003,9 @@ window.enemyData = {
         name: "Dominador Abissal",
         description: stringIsBoss + "Está presente nos estágios (0-3), 6 e 12 do Caminho Abissal.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Estágio (0-3): <span class='yellow'>707k (29 barras)</span></span>.<br>"+
                         "<span class='tab'>- Estágio 6: <span class='yellow'>69.22M (2387 barras)</span></span>.<br>"+
@@ -1045,7 +1032,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Estágio (0-3): <span class='yellow'>707k (29 barras)</span></span>.<br>"+
                         "<span class='tab'>- Estágio 6: <span class='yellow'>69.22M (2387 barras)</span></span>.<br>"+
@@ -1241,10 +1227,9 @@ window.enemyData = {
         name: "Galinha de Fogo",
         description: stringIsNotBoss + "Está presente no Santuário das Bestas Divinas.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>2.20M</span></span>.<br>"+
                         "<span class='tab'>- Master: <span class='yellow'>12.62M</span></span>.<br>"+stringScaleHP
@@ -1264,8 +1249,7 @@ window.enemyData = {
         status:{
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>0.00%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>2.20M</span></span>.<br>"+
                         "<span class='tab'>- Master: <span class='yellow'>12.62M</span></span>.<br>"+stringScaleHP
@@ -1283,10 +1267,9 @@ window.enemyData = {
         name: "Surtrark das Chamas",
         description: stringIsBoss + "Está presente no Santuário das Bestas Divinas.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>50.00%</span>",
+            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>60.94%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>4.75M (190 barras)</span></span>.<br>"+
                         "<span class='tab'>- Master: <span class='yellow'>35.45M (1418 barras)</span></span>.<br>"+stringScaleHP
@@ -1322,7 +1305,6 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>4.75M (190 barras)</span></span>.<br>"+
                         "<span class='tab'>- Master: <span class='yellow'>35.45M (1418 barras)</span></span>.<br>"+stringScaleHP
@@ -1355,10 +1337,9 @@ window.enemyData = {
         name: "Ereb",
         description: stringIsBoss + "Está presente na Trilha Obscurecida.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>2.22M (89 barras)</span>.</span><br>"+
                         "<span class='tab'>- Master: <span class='yellow'>9.93M (397 barras)</span></span><br>"+stringScaleHP
@@ -1375,10 +1356,9 @@ window.enemyData = {
         name: "O Esquecido",
         description: stringIsBoss + "Está presente na Trilha Obscurecida.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
             health: stringEstHP + "<br>"+
                         "<span class='tab'>- Normal: <span class='yellow'>3.18M (127 barras)</span></span><br>"+
                         "<span class='tab'>- Master: <span class='yellow'>17.35M (694 barras)</span></span><br>"+stringScaleHP
@@ -1391,338 +1371,18 @@ window.enemyData = {
         IsBoss: true
     },
 
-    "89": {
-        name: "Horabes",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>1.89M (76 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>8.53M (341 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                
-               `,
-        path: 'images/monsters/solene/vortex/horabes.png',
-        IsBoss: true
-    },
-
-    "90": {
-        name: "Horabes Gananciosa",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>1.89M (76 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>8.53M (341 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                
-               `,
-        path: 'images/monsters/solene/vortex/greedy_horabes.png',
-        IsBoss: true
-    },
-
-    "91": {
-        name: "Horabes Completa",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>2.21M (89 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>13.16M (530 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                
-               `,
-        path: 'images/monsters/solene/vortex/completed_horabes.png',
-        IsBoss: true
-    },
-
-    "92": {
-        name: "Horabes Transcendida - Defesa aumentada",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>96.66%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>1.42M (57 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>3.88M (156 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                - Horabes possui 3 padrões de mudança de redução de dano: <br>
-                <span class='tab'>- 96.66% de redução de dano enquanto acumula energia </span><br>
-                <span class='tab'>- 61.72% de redução de dano ao liberar energia </span><br>
-                <span class='tab'>- 83.33% de redução de dano ao se preparar para o ataque rasante </span><br>
-                - Enquanto concentra energia, Horabes irá recuperar 33k de HP para cada esfera que tocar seu corpo.<br>
-                - Após concentrar energia, Horabes atacará com um rasante 3 vezes nas regiões marcadas no mapa<br>
-                - Em seguida, Horabes ficará no centro do mapa irá liberar uma onda de energia. Enquanto realiza esse ataque, sua defesa ficará prejudicada.<br>
-                - Após esse padrão de ataque, Horabes irá recuperar parte da sua defesa e atacará novamente com um rasante, repetindo esse ciclo.
-               `,
-        path: 'images/monsters/solene/vortex/transcended_horabes.png',
-        IsBoss: true
-    },
-
-    "93": {
-        name: "Horabes Transcendida - Enfraquecida",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>61.72%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>1.41M (57 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>3.88M (156 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                - Horabes possui 3 padrões de mudança de redução de dano: <br>
-                <span class='tab'>- 96.66% de redução de dano enquanto acumula energia </span><br>
-                <span class='tab'>- 61.72% de redução de dano ao liberar energia </span><br>
-                <span class='tab'>- 83.33% de redução de dano ao se preparar para o ataque rasante </span><br>
-                - Enquanto concentra energia, Horabes irá recuperar 33k de HP para cada esfera que tocar seu corpo.<br>
-                - Após concentrar energia, Horabes atacará com um rasante 3 vezes nas regiões marcadas no mapa<br>
-                - Em seguida, Horabes ficará no centro do mapa irá liberar uma onda de energia. Enquanto realiza esse ataque, sua defesa ficará prejudicada.<br>
-                - Após esse padrão de ataque, Horabes irá recuperar parte da sua defesa e atacará novamente com um rasante, repetindo esse ciclo.
-               `,
-        path: 'images/monsters/solene/vortex/transcended_horabes.png',
-        IsBoss: true
-    },
-
-    "94": {
-        name: "Horabes Transcendida",
-        description: stringIsBoss + "Está presente no Turbilhão do Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>83.33%</span>",
-            health: stringEstHP + "<br>"+
-                        "<span class='tab'>- Normal: <span class='yellow'>1.41M (57 barras)</span></span><br>"+
-                        "<span class='tab'>- Master: <span class='yellow'>3.88M (156 barras)</span></span><br>"+stringScaleHP
-        },
-        extra: `
-                - Horabes possui 3 padrões de mudança de redução de dano: <br>
-                <span class='tab'>- 96.66% de redução de dano enquanto acumula energia </span><br>
-                <span class='tab'>- 61.72% de redução de dano ao liberar energia </span><br>
-                <span class='tab'>- 83.33% de redução de dano ao se preparar para o ataque rasante </span><br>
-                - Enquanto concentra energia, Horabes irá recuperar 33k de HP para cada esfera que tocar seu corpo.<br>
-                - Após concentrar energia, Horabes atacará com um rasante 3 vezes nas regiões marcadas no mapa<br>
-                - Em seguida, Horabes ficará no centro do mapa irá liberar uma onda de energia. Enquanto realiza esse ataque, sua defesa ficará prejudicada.<br>
-                - Após esse padrão de ataque, Horabes irá recuperar parte da sua defesa e atacará novamente com um rasante, repetindo esse ciclo.
-               `,
-        path: 'images/monsters/solene/vortex/transcended_horabes.png',
-        IsBoss: true
-    },
-
-    "95": {
-        name: "Destruidor do Vazio",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<span class='yellow'>40.30M (1612 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                <p>Ao atingir a marca de 4:00~4:15, o boss irá invocar 4 dispositivos 'Injetor Divino' pelo mapa. Eles deverão ser ativados para que o boss pare seu ataque e fique enfraquecido.</p>
-                <p>Caso não sejam ativados, o boss irá invocar esferas de energia que seguirão os jogadores e causarão dano.</p>
-               `,
-        path: 'images/monsters/destroyer.png',
-        IsBoss: true
-    },
-
-    "96": {
-        name: "Destruidor do Vazio (Enfraquecido)",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>-100.00%</span>",
-            health: stringEstHP + "<span class='yellow'>40.30M (1612 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                <p>Ao atingir a marca de 4:00~4:15, o boss irá invocar 4 dispositivos 'Injetor Divino' pelo mapa. Eles deverão ser ativados para que o boss pare seu ataque e fique enfraquecido.</p>
-                <p>Caso não sejam ativados, o boss irá invocar esferas de energia que seguirão os jogadores e causarão dano.</p>
-                `,
-        path: 'images/monsters/destroyer.png',
-        IsBoss: true
-    },
-
-    "97": {
-        name: "Exterminador do Vazio (2F)",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
-            health: stringEstHP + "<span class='yellow'>53.73M (2149 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                O boss teleportará para o centro do mapa e colocará uma marca em um jogador aleatório. Após alguns segundos, uma faixa horizontal aparecerá no local onde o jogador está. Esta faixa ficará causando dano contínuo até o fim da mecânica de Danger.<br>
-                Durante a mecânica de Danger, o boss ficará com redução de dano aumentada.
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
-    "98": {
-        name: "Exterminador do Vazio (2F) (Defesa aumentada)",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<span class='yellow'>53.73M (2149 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                O boss teleportará para o centro do mapa e colocará uma marca em um jogador aleatório. Após alguns segundos, uma faixa horizontal aparecerá no local onde o jogador está. Esta faixa ficará causando dano contínuo até o fim da mecânica de Danger.<br>
-                Durante a mecânica de Danger, o boss ficará com redução de dano aumentada.
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
-    "99": {
-        name: "Exterminador do Vazio (3F)",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
-            health: stringEstHP + "<span class='yellow'>107.43M (4297 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                O boss teleportará para o centro do mapa e colocará diversas faixas pelo mapa. Após alguns segundos essas faixas causaram dano nas regiões marcadas. Em seguida, o boss irá se mover para algum dos cantos do mapa.<br>
-                A segunda mecânica de Danger será igual à da primeira fase.<br>
-                Durante a mecânica de Danger, o boss ficará com redução de dano aumentada.
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
-    "100": {
-        name: "Exterminador do Vazio (3F) (Defesa aumentada)",
-        description: stringIsBoss + "Está presente no Vazio 4: Apocalipse.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<span class='yellow'>107.43M (4297 barras)</span>"
-        },
-        extra: `
-                <p><strong>Mecânica de Danger:</strong></p>
-                O boss teleportará para o centro do mapa e colocará diversas faixas pelo mapa. Após alguns segundos essas faixas causaram dano nas regiões marcadas. Em seguida, o boss irá se mover para algum dos cantos do mapa.<br>
-                A segunda mecânica de Danger será igual à da primeira fase.<br>
-                Durante a mecânica de Danger, o boss ficará com redução de dano aumentada.
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
-    "101": {
-        name: "Exterminador do Vazio (4F)",
-        description: stringIsBoss + "Está presente no estágio oculto (4F) do Vazio 4: Apocalipse. Só é possível acessar o estágio oculto caso o estágio 3 seja concluido antes da marca de 1:00 do timer.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<span class='yellow'>281.95M (11278 barras)</span>"
-        },
-        extra: `
-                <p>Este boss ficará fazendo uma rotação de <strong>teleporte → casting → stun</strong> até ser derrotado e você terá <strong>7~8 segundos</strong> para interromper cada casting. O HP necessário para a quebra aumentará progressivamente.</p>
-                
-                <ul style="margin-left: 20px; margin-bottom: 15px;">
-                    <li><strong>1° casting:</strong> Teleportará para o canto superior esquerdo do mapa.</li>
-                    <li><strong>2° casting:</strong> Teleportará para o centro do mapa.</li>
-                    <li><strong>A partir do 3° casting:</strong> Poderá teleportar aleatoriamente para locais definidos (conforme a imagem). Após o 5° casting, a rotação reinicia no local do primeiro casting.</li>
-                </ul>
-
-                <p><strong>Dano necessário para interromper cada casting:</strong></p>
-                <p style="color: #FFD700; background: rgba(255,255,255,0.05); padding: 5px; border-radius: 4px; display: inline-block;">
-                    10M → 13.3M → 16.6M → 19.9M → ... [mais testes necessários]
-                </p>
-                <img src='images/common/casting_pattern.jpg' class='mini-icon2' oncontextmenu='return false';>
-                <p>※ Ao interromper o casting, o boss ficará enfraquecido e receberá muito mais dano (-100% de redução de dano) durante 10 segundos. É necessário usar esse momento para causar a maior quantidade de dano possível para evitar um novo casting.
-                <p>※ Caso um casting não seja interrompido, o boss causará um ataque poderoso e voltará ao padrão usual de casting. É possível evitar o dano se você ficar em algum dos cantos do mapa.</p>
-                <p style="font-size: 12pt;"><i><b>Nota:</b> Não é possível causar dano de ataque pelas costas a ele.</i></p>
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
-    "102": {
-        name: "Exterminador do Vazio (4F) (Enfraquecido)",
-        description: stringIsBoss + "Está presente no estágio oculto (4F) do Vazio 4: Apocalipse. Só é possível acessar o estágio oculto caso o estágio 3 seja concluido antes da marca de 1:00 do timer.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
-            monster_DmgRed: stringDmgRed + "<span class='yellow'>-100.00%</span>",
-            health: stringEstHP + "<span class='yellow'>281.95M (11278 barras)</span>"
-        },
-        extra: `
-                <p>Este boss ficará fazendo uma rotação de <strong>teleporte → casting → stun</strong> até ser derrotado e você terá <strong>7~8 segundos</strong> para interromper cada casting. O HP necessário para a quebra aumentará progressivamente.</p>
-                
-                <ul style="margin-left: 20px; margin-bottom: 15px;">
-                    <li><strong>1° casting:</strong> Teleportará para o canto superior esquerdo do mapa.</li>
-                    <li><strong>2° casting:</strong> Teleportará para o centro do mapa.</li>
-                    <li><strong>A partir do 3° casting:</strong> Poderá teleportar aleatoriamente para locais definidos (conforme a imagem). Após o 5° casting, a rotação reinicia no local do primeiro casting.</li>
-                </ul>
-
-                <p><strong>Dano necessário para interromper cada casting:</strong></p>
-                <p style="color: #FFD700; background: rgba(255,255,255,0.05); padding: 5px; border-radius: 4px; display: inline-block;">
-                    10M → 13.3M → 16.6M → 19.9M → ... [mais testes necessários]
-                </p>
-                <img src='images/common/casting_pattern.jpg' class='mini-icon2' oncontextmenu='return false';>
-                <p>※ Ao interromper o casting, o boss ficará enfraquecido e receberá muito mais dano (-100% de redução de dano) durante 10 segundos. É necessário usar esse momento para causar a maior quantidade de dano possível para evitar um novo casting.
-                <p>※ Caso um casting não seja interrompido, o boss causará um ataque poderoso e voltará ao padrão usual de casting. É possível evitar o dano se você ficar em algum dos cantos do mapa.</p>
-                <p style="font-size: 12pt;"><i><b>Nota:</b> Não é possível causar dano de ataque pelas costas a ele.</i></p>
-               `,
-        path: 'images/monsters/eradicator.png',
-        IsBoss: true
-    },
-
 };
 
 window.categoryMap = {
     "Padrão": ["0"],
     "Caminho Abissal (AP) - Conquistador": ["61", "62", "70", "71", "72"],
-    
-    "Vazio 1: Invasão": ["18"],
-    "Vazio 2: Contaminação": ["19", "20", "21"],
-    "Vazio 3: Pesadelo": ["44", "45", "46", "47", "48", "49", "50", "51", "52"],
-    "Vazio 4: Apocalipse": ["95", "96", "97", "98", "99", "100", "101", "102"],
-
     "Solene - Capela da Eternidade": ["73", "74", "75"],
     "Solene - Salão da Harmonia": ["76", "77", "78", "79", "80", "81"],
     "Solene - Santuário das Bestas Divinas": ["82", "83", "84", "85", "86"],
     "Solene - Trilha Obscurecida": ["87", "88"],
-    "Solene - Turbilhão do Apocalipse": ["89", "90", "91", "92", "93", "94"],
-
+    "Vazio 1: Invasão": ["18"],
+    "Vazio 2: Contaminação": ["19", "20", "21"],
+    "Vazio 3: Pesadelo": ["44", "45", "46", "47", "48", "49", "50", "51", "52"],
     "Claustro Infinito 3 (IC3)": ["22", "23", "24", "25", "26", "27", "28", "29"],
     "Claustro Infinito 4 (IC4)": ["53", "54", "55", "56", "57", "58", "59", "60"],
     "Torre da Extinção (TOD)": ["1", "2", "3", "4", "5", "6", "17", "7", "16", "15", "8", "34", "9", "10"],

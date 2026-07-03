@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="info-title" style="color: #FFB347;">[Status]</h3>
                 <ul class="info-list">
                     <li>Aqui você irá inserir os valores de status do seu personagem.</li>
-                    <li>Você deverá marcar a <i>checkbox</i> da Lança Infernal, caso deseje ver seu dano de comando básico com lança infernal. Lembre-se que a lança infernal só aparecerá caso o Dano de Lança Infernal seja maior que zero. </li>
                 </ul>
             </div>
 
