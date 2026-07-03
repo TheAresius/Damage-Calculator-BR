@@ -11,12 +11,13 @@ const stringsComboDamage = "Dano de comando básico";
 const stringsSkillDamage = "Dano de skill";
 const stringsPetDamage = "Dano de pet";
 
-const stringDef1 = "- Defesa contra ataques básicos: ";
-const stringDef2 = "- Defesa contra pet: ";
-const stringDef3 = "- Defesa contra habilidades: ";
+const stringDef1 = "<img src='images/icons/monster_stat/command.png' class='monster-stat-icon' alt='Normal'> Defesa contra ataques básicos: ";
+const stringDef2 = "<img src='images/icons/monster_stat/pet.png' class='monster-stat-icon' alt='Pet'> Defesa contra pet: ";
+const stringDef3 = "<img src='images/icons/monster_stat/skill.png' class='monster-stat-icon' alt='Skill'> Defesa contra habilidades: ";
+const stringDmgRed = "<img src='images/icons/monster_stat/resist.png' class='monster-stat-icon' alt='Redução de dano'> Redução de Dano: ";
 const stringIsBoss = "Este inimigo é considerado um chefe. ";
 const stringIsNotBoss = "Este inimigo <b>não</b> é considerado um chefe. ";
-const stringEstHP = " - HP (estimado): ";
+const stringEstHP = "<img src='images/icons/monster_stat/hp.png' class='monster-stat-icon' alt='HP'> HP (estimado): ";
 const stringScaleHP = " (o HP deste inimigo é aumentado para cada membro adicional do grupo)."
 const stringDelay = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/delay.png' alt='Delay Icon' class='modal-icon'>Este inimigo é vulnerável a delay de habilidades.</div>"
 const stringNoDelay = "<div class='paralyze'><img src='/assets/icons/calculators/damage-calculator/modal/no-delay.png' alt='Delay Icon' class='modal-icon'>Este inimigo não é vulnerável a delay de habilidades.</div>"
@@ -43,6 +44,8 @@ const stringsHistoryListDamageValue = "Dano base";
 const stringsHistoryListDef = "Debuffs de defesa";
 const stringsHistoryListSpecificTier = "Buffs de tier específica";
 const stringsHistoryListSpecificSkill = "Buffs de skill específica";
+const stringsHistoryListHSChance = "Chance de Lança Infernal";
+const stringsHistoryListHSDamage = "Dano de Lança Infernal";
 
 
 const stringsNormalHitDamage = "Hit normal";
