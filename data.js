@@ -244,31 +244,18 @@ window.enemyData = {
     },
 
     "13": {
-        name: "Harkyon (corpo)",
+        name: "Harkyon",
         description: stringIsBoss + "Está presente na Terra do Julgamento.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>30.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>30.00%</span>",
+            defense1: stringDef1 + "<span class='yellow'>10.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>10.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>690.00M</span>."
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>100.00B (?)</span>."
         },
-        extra: "- Harkyon possui duas regiões de dano, seu corpo e suas patas.<br>"+
-               "- O dano causado nas patas é reduzido em 80%.",
-        path: 'images/monsters/harkyon.png',
-        IsBoss: true
-    },
-
-    "14": {
-        name: "Harkyon (patas)",
-        description: stringIsBoss + "Está presente na Terra do Julgamento.",
-        status:{
-            defense1: stringDef1 + "<span class='yellow'>86.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>86.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>88.00%</span>",
-            health: stringEstHP + "<span class='yellow'>690.00M</span>."
-        },
-        extra: "- Harkyon possui duas regiões de dano, seu corpo e suas patas.<br>"+
-               "- O dano causado nas patas é reduzido em 80%.",
+        extra: `
+                Você receberá 1 ponto para cada 100 de dano causado.
+               `,
         path: 'images/monsters/harkyon.png',
         IsBoss: true
     },
@@ -1711,6 +1698,7 @@ window.enemyData = {
 window.categoryMap = {
     "Padrão": ["0"],
     "Caminho Abissal (AP) - Conquistador": ["61", "62", "70", "71", "72"],
+    "Terra do Julgamento": ["13"],
     
     "Vazio 1: Invasão": ["18"],
     "Vazio 2: Contaminação": ["19", "20", "21"],
@@ -1727,7 +1715,6 @@ window.categoryMap = {
     "Claustro Infinito 4 (IC4)": ["53", "54", "55", "56", "57", "58", "59", "60"],
     "Torre da Extinção (TOD)": ["1", "2", "3", "4", "5", "6", "17", "7", "16", "15", "8", "34", "9", "10"],
     "Covil de Berkas": ["11", "12"],
-    "Terra do Julgamento": ["13", "14"],
     "Torre das Ilusões (WL)": ["30", "31", "32", "33"]    
 };
 
