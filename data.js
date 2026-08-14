@@ -1637,7 +1637,7 @@ window.enemyData = {
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
             monster_DmgRed: stringDmgRed + "<span class='yellow'>66.66%</span>",
-            health: stringEstHP + "<span class='yellow'>281.95M (11278 barras)</span>"
+            health: stringEstHP + "<span class='yellow'>281.93M (11278 barras)</span>"
         },
         extra: `
                 <p>Este boss ficará fazendo uma rotação de <strong>teleporte → casting → stun</strong> até ser derrotado e você terá <strong>7~8 segundos</strong> para interromper cada casting. O HP necessário para a quebra aumentará progressivamente.</p>
@@ -1649,8 +1649,9 @@ window.enemyData = {
                 </ul>
 
                 <p><strong>Dano necessário para interromper cada casting:</strong></p>
-                <p style="color: #FFD700; background: rgba(255,255,255,0.05); padding: 5px; border-radius: 4px; display: inline-block;">
-                    10M → 13.3M → 16.6M → 19.9M → ... [mais testes necessários]
+                <p style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 4px; display: inline-block;">
+                    <span style='display:inline-block;'>Para quebrar o primeiro casting é necessário causar <b>3.5% do HP máximo do boss [9.87M]</b>. Para o segundo casting em diante o valor permanece fixo em <b>5% [14.10M]</b>.</span>
+                    <span style='display:inline-block;'>Ao jogar com até 3 pessoas, o valor do primeiro casting muda para <b>2% do HP máximo do boss [5.64M]</b>. Para o segundo e terceiro castings, o valor se mantém como se estivesse jogando com 4 pessoas — 3.5% e 5%.</span>
                 </p>
                 <img src='images/common/casting_pattern.jpg' class='mini-icon2' oncontextmenu='return false';>
                 <p>※ Ao interromper o casting, o boss ficará enfraquecido e receberá muito mais dano (-100% de redução de dano) durante 10 segundos. É necessário usar esse momento para causar a maior quantidade de dano possível para evitar um novo casting.
@@ -1681,8 +1682,9 @@ window.enemyData = {
                 </ul>
 
                 <p><strong>Dano necessário para interromper cada casting:</strong></p>
-                <p style="color: #FFD700; background: rgba(255,255,255,0.05); padding: 5px; border-radius: 4px; display: inline-block;">
-                    10M → 13.3M → 16.6M → 19.9M → ... [mais testes necessários]
+                <p style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 4px; display: inline-block;">
+                    <span style='display:inline-block;'>Para quebrar o primeiro casting é necessário causar <b>3.5% do HP máximo do boss [9.87M]</b>. Para o segundo casting em diante o valor permanece fixo em <b>5% [14.10M]</b>.</span>
+                    <span style='display:inline-block;'>Ao jogar com até 3 pessoas, o valor do primeiro casting muda para <b>2% do HP máximo do boss [5.64M]</b>. Para o segundo e terceiro castings, o valor se mantém como se estivesse jogando com 4 pessoas — 3.5% e 5%.</span>
                 </p>
                 <img src='images/common/casting_pattern.jpg' class='mini-icon2' oncontextmenu='return false';>
                 <p>※ Ao interromper o casting, o boss ficará enfraquecido e receberá muito mais dano (-100% de redução de dano) durante 10 segundos. É necessário usar esse momento para causar a maior quantidade de dano possível para evitar um novo casting.
@@ -2252,6 +2254,27 @@ window.buffsData = [
         category: "character",
         icon: "images/icons/character/go_luffy.png", 
         stats: {buff: 5}  
+    },
+    { 
+        id: "ruin_blade1", 
+        name: "Lâmina da Ruína",
+        category: "character",
+        icon: "images/icons/character/ruin_blade1.png", 
+        stats: {buff: 40}  
+    },
+    { 
+        id: "ruin_blade2", 
+        name: "Lâmina da Ruína Aprimorada Tipo 1",
+        category: "character",
+        icon: "images/icons/character/ruin_blade2.png", 
+        stats: {buff: 50}  
+    },
+    { 
+        id: "ruin_blade3", 
+        name: "Lâmina da Ruína Aprimorada Tipo 2",
+        category: "character",
+        icon: "images/icons/character/ruin_blade3.png", 
+        stats: {buff: 60}  
     },
 
     // pet
