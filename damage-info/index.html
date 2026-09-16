@@ -52,6 +52,11 @@
                     <ion-icon name="calculator-outline"></ion-icon>
                     Calculadora de Dano
                 </a>
+
+                <a href="https://thearesius.github.io/Total-Attack-BR/" class="menu-link">
+                    <ion-icon name="calculator-outline"></ion-icon>
+                    Calculadora de Ataque Total
+                </a>
                 
                 <a href="#" class="menu-link">
                     <ion-icon name="book-outline"></ion-icon>
@@ -133,18 +138,14 @@
 
     <div id="menuOverlay" class="menu-overlay"></div>
 
-    <div class="navigation-header">
-    
-    </div>
+    <div class="navigation-header"></div>
 
     <main>
         <div class="dmg-description">
             <h1>Como o dano funciona?</h1>
 
             <p class="justified"><span class="tab">Primeiramente vou demonstrar todo o formalismo matemático e o método de análise de dados para a fórmula de dano do jogo, em seguida vou explicar detalhadamente como ela funciona.</span></p>
-            
-            <div class="separator"></div>
-            
+                      
             <h3>Formalismo matemático da fórmula de dano</h3>
 
             <p class="justified"><span class="tab">Foram propostos diversos modelos matemáticos para a fórmula de dano no jogo: lineares, polinomiais, exponenciais e combinações de modelos não lineares.</span></p>
@@ -177,7 +178,6 @@
                     os valores de ataque e ataque especial, ou seja, os status foram mudados a cada teste, mas o monstro e a skill utilizados foram os mesmos, tornando a forma de análise muito mais simples e sendo possível utilizar um método de data fitting
                     como mínimos quadrados.
                 </span>
-                
             </p>
 
             <p class="justified">
@@ -261,8 +261,7 @@
                 \]
             </div>
             
-            <div class="separator"></div>
-
+            
             <h3>Fatores adicionais</h3>
             <p class="justified">
                 <span class="tab">
@@ -401,7 +400,6 @@
                 \]
             </div>
 
-            <div class="separator"></div>
 
             <div class="ending">
                 <h3><span class="yellow">Considerações Finais</span></h3>
@@ -454,7 +452,31 @@
                         <strong>Diluição de buffs:</strong>
                         <p>
                             Como os buffs no jogo somam-se entre si antes de multiplicar o dano, um buff de 10% não aumenta seu dano final em 10%, por exemplo. Se você já possui 50% em buffs e recebe mais 10%, o ganho real percebido será de apenas 
-                            \( \frac{10}{100 + 50} \approx 6.66\text{%} \) no dano final.
+                            \( \frac{100 + 50 + 10}{100 + 50} \approx 1.066\text{ ou } 6.66\text{%}\) no dano final.
+                        </p>
+                        <div class="separator"></div>
+                        <p>
+                            <a style = 'font-weight: bold; color: #2effa8'>Exemplo:</a> Ronan com Renak (<b>10%</b>) + Club GC (<b>10%)</b> + buffs do chase point (<b>40%</b>) + runa de skills (<b>7.51%</b> + <b>12%</b>) + 3x 4.5% de dano causado a chefes no despertar (<b>13.5%</b>). Vamos adicionar 5 stacks da Bênção Divina (<b>25%</b>):
+                        </p>
+                        <div class="latex">
+                            \[
+                                \frac{100 + 10 + 10 + 40 + 7.51 + 12 + 13.5 + 25} {100 + 10 + 10 + 40 + 7.51 + 12 + 13.5} = 1.129 \text{ ou } 12.9\text{% de dano extra.}
+                            \]
+                        </div> 
+                        <p>
+                            Percebe-se que, neste caso com poucos buffs, os <b>25%</b> de buff da Bênção Divina já viram apenas <b>12.9%</b> de dano final a mais.
+                            Conforme vamos adicionando mais buffs, a contribuição individual de cada buff fica ainda menor e novos buffs vão perdendo a eficiência no nosso dano.
+                        </p>
+                        <div class="separator"></div>
+                        <p>
+                            <a style = 'font-weight: bold; color: #2effa8;'>Exemplo:</a> Uma pt bem buffada com Renak (<b>10%</b>) + Seareton (<b>5%</b>) + 2x Club GC (<b>20%</b>) + 2x conjunto de raiva (<b>10%</b>) + 2x conjunto de combate (<b>5%</b>) + buffs do chase point (<b>40%</b>) + runa de skills (<b>7.51%</b> + <b>12%</b>) + 3x 4.5% de dano causado a chefes no despertar (<b>13.5%</b>) + aura de dano da Lime (<b>7%</b>) + Hora da Dança da Amy (<b>15%</b>). Vamos adicionar os mesmos 5 stacks da Bênção Divina (<b>25%</b>):
+                        </p>
+                        <div class="latex">
+                            \[
+                                \frac{100 + 10 + 5 + 20 + 10 + 5 + 40 + 7.51 + 12 + 13.5 + 7 + 15 + 25} {100 + 10 + 5 + 20 + 10 + 5 + 40 + 7.51 + 12 + 13.5 + 7 + 15} = 1.102 \text{ ou } 10.2\text{% de dano extra.}
+                            \]
+                        </div>
+                            Esse é o motivo principal para que suportes ofensivos tenham uma contribuição tão baixa no jogo. Seria necessário que o jogo fizesse a separação de buffs em categorias multiplicativas, ao invés de somar todos os buffs em um único multiplicador. Ou então precisariamos de personagens buffando algo em torno de 50~100% para que o suporte fosse realmente perceptível.
                         </p>
                     </li>
 

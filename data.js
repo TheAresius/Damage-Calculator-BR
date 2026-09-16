@@ -809,9 +809,10 @@ window.enemyData = {
         name: "Astaroth, o Criador (canto)",
         description: stringIsNotBoss + "Está presente no primeiro estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>60.93%</span>",
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>50.00%</span>",
             health: stringEstHP + "<span class='yellow'>8.95M</span>"
         },
         extra: "-",
@@ -823,9 +824,10 @@ window.enemyData = {
         name: "Astaroth, o Criador (meio)",
         description: stringIsNotBoss + "Está presente no primeiro estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>60.93%</span>",
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>50.00%</span>",
             health: stringEstHP + "<span class='yellow'>22.31M</span>"
         },
         extra: "-",
@@ -837,16 +839,17 @@ window.enemyData = {
         name: "Dragão Guerreiro",
         description: stringIsNotBoss + "Está presente no segundo estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>90.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>90.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>92.19%</span>",
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>90.00%</span>",
             health: stringEstHP + "<span class='yellow'>46.24M</span>"
         },
-        extra: "- O Dragão Guerreiro possui uma defesa extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua defesa será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
-               "- Enquanto estiver enfraquecido, sua defesa ficará oscilando da seguinte forma:<br>"+
+        extra: "- O Dragão Guerreiro possui uma redução de dano extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua redução de dano será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
+               "- Enquanto estiver enfraquecido, sua redução de dano ficará oscilando da seguinte forma:<br>"+
                "<span class='tab'>- 3 segundos enfraquecido (ele receberá 10x o dano usual)</span></span>.<br>"+
                "<span class='tab'>- 1 segundo super enfraquecido (ele receberá 20x o dano usual)</span></span>.<br><br>"+
-               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da defesa super reduzida dele.",
+               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da redução de dano baixa dele.",
         path: 'images/monsters/dragon cloister.png',
         IsBoss: false
     },
@@ -855,16 +858,17 @@ window.enemyData = {
         name: "Dragão Guerreiro (enfraquecido)",
         description: stringIsNotBoss + "Está presente no segundo estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>60.93%</span>",
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>50.00%</span>",
             health: stringEstHP + "<span class='yellow'>46.24M</span>"
         },
-        extra: "- O Dragão Guerreiro possui uma defesa extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua defesa será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
-               "- Enquanto estiver enfraquecido, sua defesa ficará oscilando da seguinte forma:<br>"+
+        extra: "- O Dragão Guerreiro possui uma redução de dano extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua redução de dano será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
+               "- Enquanto estiver enfraquecido, sua redução de dano ficará oscilando da seguinte forma:<br>"+
                "<span class='tab'>- 3 segundos enfraquecido (ele receberá 10x o dano usual)</span></span>.<br>"+
                "<span class='tab'>- 1 segundo super enfraquecido (ele receberá 20x o dano usual)</span></span>.<br><br>"+
-               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da defesa super reduzida dele.",
+               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da redução de dano baixa dele.",
         path: 'images/monsters/dragon cloister.png',
         IsBoss: false
     },
@@ -876,13 +880,14 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
             health: stringEstHP + "<span class='yellow'>46.24M</span>"
         },
-        extra: "- O Dragão Guerreiro possui uma defesa extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua defesa será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
-               "- Enquanto estiver enfraquecido, sua defesa ficará oscilando da seguinte forma:<br>"+
+        extra: "- O Dragão Guerreiro possui uma redução de dano extremamente alta se não for atingido pela catapulta (você causa apenas 10% do seu dano usual). Ao ser atingido, sua redução de dano será reduzida durante 10 segundos (extendível com congelamento/frame freeze).<br><br>"+
+               "- Enquanto estiver enfraquecido, sua redução de dano ficará oscilando da seguinte forma:<br>"+
                "<span class='tab'>- 3 segundos enfraquecido (ele receberá 10x o dano usual)</span></span>.<br>"+
                "<span class='tab'>- 1 segundo super enfraquecido (ele receberá 20x o dano usual)</span></span>.<br><br>"+
-               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da defesa super reduzida dele.",
+               "- Para maximizar o dano é necessário utilizar um pet que congele durante bastante tempo enquanto o Dragão está super enfraquecido. Dessa forma é possível aumentar a duração da redução de dano baixa dele.",
         path: 'images/monsters/dragon cloister.png',
         IsBoss: false
     },
@@ -891,9 +896,10 @@ window.enemyData = {
         name: "Encantrix",
         description: stringIsNotBoss + "Está presente no terceiro estágio do Claustro Infinito na dificuldade 4.",
         status:{
-            defense1: stringDef1 + "<span class='yellow'>50.00%</span>",
-            defense2: stringDef2 + "<span class='yellow'>50.00%</span>",
-            defense3: stringDef3 + "<span class='yellow'>60.93%</span>",
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>50.00%</span>",
             health: stringEstHP + "<span class='yellow'>23.82M</span>"
         },
         extra: "- A cada ~27 segundos a Encantrix irá invocar uma nova 'Essência da Morte' (limite de 3).<br>"+
