@@ -1871,6 +1871,20 @@ window.buffsData = [
         stats: {buff: 15}  
     },
     { 
+        id: "unleashed1", 
+        name: "Libertação (primeiro núcleo)", 
+        category: "general",
+        icon: "images/icons/general/unleashed.png", 
+        stats: {buff: 2.5}  
+    },
+    { 
+        id: "unleashed2", 
+        name: "Libertação (último núcleo)", 
+        category: "general",
+        icon: "images/icons/general/unleashed.png", 
+        stats: {buff: 5}  
+    },
+    { 
         id: "taint_buff", 
         name: "Buff do Vazio 2: Contaminação", 
         category: "general",
@@ -1965,25 +1979,32 @@ window.buffsData = [
         stats: {buff: 10}  
     },
     { 
+        id: "powerful_idol", 
+        name: "Diva",
+        category: "character",
+        icon: "images/icons/character/powerful_idol.png", 
+        stats: {buff: 2},
+    },
+    { 
         id: "fever", 
         name: "Hora da Dança",
         category: "character",
         icon: "images/icons/character/fever.png", 
-        stats: {buff: 15},
+        stats: {buff: 15, crit: 3},
     },
     { 
         id: "fan_service1", 
-        name: "Melodia do Amor Nv1",
+        name: "Melodia do Amor Tipo 1",
         category: "character",
         icon: "images/icons/character/fan_service1.png", 
-        stats: {buff: 15},
+        stats: {buff: 30},
     },
     { 
-        id: "fan_service2", 
-        name: "Melodia do Amor Nv2",
+        id: "encore_dance", 
+        name: "Reprise da Dança",
         category: "character",
-        icon: "images/icons/character/fan_service2.png", 
-        stats: {buff: 30},
+        icon: "images/icons/character/encore_dance.png", 
+        stats: {buff: 20},
     },
     { 
         id: "yin1", 
@@ -2204,6 +2225,13 @@ window.buffsData = [
         stats: {buff: 5}  
     },
     { 
+        id: "brilliant_dash_buff", 
+        name: "Investida Brilhante Tipo 1",
+        category: "character",
+        icon: "images/icons/character/brilliant_dash.png", 
+        stats: {buff: 10}  
+    },
+    { 
         id: "overheat1", 
         name: "Superaquecimento",
         category: "character",
@@ -2344,6 +2372,13 @@ window.buffsData = [
         stats: {ignore_def: 5}  
     },
     { 
+        id: "stigma", 
+        name: "Onda Mística Tipo 1",
+        category: "defense",
+        icon: "images/icons/defense/stigma.png", 
+        stats: {ignore_def: 10}  
+    },
+    { 
         id: "pretty_virus", 
         name: "Virus Glamuroso",
         category: "defense",
@@ -2356,6 +2391,13 @@ window.buffsData = [
         category: "defense",
         icon: "images/icons/defense/mystic_flow.png", 
         stats: {ignore_def: 10}  
+    },
+    { 
+        id: "ligra_overflow", 
+        name: "Ligra Transbordante",
+        category: "defense",
+        icon: "images/icons/defense/ligra_overflow.png", 
+        stats: {ignore_def: 15}  
     },
     { 
         id: "haunt_curse", 
@@ -2412,6 +2454,13 @@ window.buffsData = [
         category: "defense",
         icon: "images/icons/defense/void_weaken.png", 
         stats: {ignore_def: 5}  
+    },
+    { 
+        id: "brilliant_dash_def", 
+        name: "Investida Brilhante Tipo 1",
+        category: "defense",
+        icon: "images/icons/defense/brilliant_dash.png", 
+        stats: {ignore_def: 10}  
     },
     { 
         id: "chain_blast", 
