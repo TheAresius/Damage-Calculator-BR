@@ -1701,6 +1701,102 @@ window.enemyData = {
         IsBoss: true
     },
 
+    "103": {
+        name: "Berkas (corpo)",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>0.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>0.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>21.88%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
+    "104": {
+        name: "Berkas (patas)",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>40.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>40.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>53.12%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
+    "105": {
+        name: "Berkas (cauda)",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>53.33%</span>",
+            defense2: stringDef2 + "<span class='yellow'>53.33%</span>",
+            defense3: stringDef3 + "<span class='yellow'>63.51%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
+    "106": {
+        name: "Berkas (corpo) - Sem Supressor",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>66.66%</span>",
+            defense2: stringDef2 + "<span class='yellow'>66.66%</span>",
+            defense3: stringDef3 + "<span class='yellow'>73.96%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
+    "107": {
+        name: "Berkas (patas) - Sem Supressor",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>80.00%</span>",
+            defense2: stringDef2 + "<span class='yellow'>80.00%</span>",
+            defense3: stringDef3 + "<span class='yellow'>84.35%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
+    "108": {
+        name: "Berkas (cauda) - Sem Supressor",
+        description: stringIsBoss + "Está presente na raid Covil de Berkas.",
+        status:{
+            defense1: stringDef1 + "<span class='yellow'>84.43%</span>",
+            defense2: stringDef2 + "<span class='yellow'>84.43%</span>",
+            defense3: stringDef3 + "<span class='yellow'>87.83%</span>",
+            monster_DmgRed: stringDmgRed + "<span class='yellow'>0.00%</span>",
+            health: stringEstHP + "<span class='yellow'>7.65M (307 barras)</span>" + stringScaleHP
+        },
+        extra: "- Devido ao seu tamanho, Berkas possui muitas regiões de hitbox e o dano causado a ele é dividido entre corpo, patas e cauda. <br>"+
+               "- Seu dano é reduzido em 66% sem o supressor",
+        path: 'images/monsters/berkas.png',
+        IsBoss: true
+    },
+
 };
 
 window.categoryMap = {
@@ -1722,7 +1818,7 @@ window.categoryMap = {
     "Claustro Infinito 3 (IC3)": ["22", "23", "24", "25", "26", "27", "28", "29"],
     "Claustro Infinito 4 (IC4)": ["53", "54", "55", "56", "57", "58", "59", "60"],
     "Torre da Extinção (TOD)": ["1", "2", "3", "4", "5", "6", "17", "7", "16", "15", "8", "34", "9", "10"],
-    "Covil de Berkas": ["11", "12"],
+    "Covil de Berkas": ["103", "104", "105", "106", "107", "108"],
     "Torre das Ilusões (WL)": ["30", "31", "32", "33"]    
 };
 
