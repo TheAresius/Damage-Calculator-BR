@@ -189,7 +189,7 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>8.81M (353 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>8.82M (353 barras)</span>."
         },
         extra: "- Gadosen usará sua mecânica de 'absorção de alma' a cada 40 segundos. Se você estiver na área vermelha você morrerá, não importa o quê faça.",
         path: 'images/monsters/gadosen 1.png',
@@ -203,7 +203,7 @@ window.enemyData = {
             defense1: stringDef1 + "<span class='yellow'>60.00%</span>",
             defense2: stringDef2 + "<span class='yellow'>60.00%</span>",
             defense3: stringDef3 + "<span class='yellow'>40.00%</span>",
-            health: stringEstHP + "<span class='yellow'>55.18M (2401 barras)</span>."
+            health: stringEstHP + "<span class='yellow'>57.59M (2401 barras)</span>."
         },
         extra: "- De tempos em tempos Cazeaje irá se teleportar para o centro do mapa e começará a acumular energia. Um conjunto de marcas aparecerá no chão indicando a sequência do ataque.<br>"+
                "- Se você usar skills enquanto ela concentra energia, você poderá causar delay no ataque e acabar matando os membros do grupo.",
@@ -2515,6 +2515,13 @@ window.buffsData = [
         category: "defense",
         icon: "images/icons/defense/charge.png", 
         stats: {ignore_def: 5}  
+    },
+    { 
+        id: "shard_of_spirit", 
+        name: "Fragmento da Alma",
+        category: "defense",
+        icon: "images/icons/defense/shard_of_spirit.png", 
+        stats: {ignore_def: 10}  
     },
     { 
         id: "pressure_point", 
