@@ -2079,7 +2079,7 @@ window.buffsData = [
         name: "Diva",
         category: "character",
         icon: "images/icons/character/powerful_idol.png", 
-        stats: {buff: 2},
+        stats: {mult_buff: 2},
     },
     { 
         id: "fever", 
@@ -2106,14 +2106,21 @@ window.buffsData = [
         id: "yin1", 
         name: "Yin Tipo 1",
         category: "character",
-        icon: "images/icons/character/yin.png", 
+        icon: "images/icons/character/yin1.png", 
         stats: {buff: 100},
     },
     { 
         id: "yin2", 
         name: "Yin Tipo 2",
         category: "character",
-        icon: "images/icons/character/yin.png", 
+        icon: "images/icons/character/yin2.png", 
+        stats: {buff: 10},
+    },
+    { 
+        id: "jin_gow", 
+        name: "Verdadeiro Punho dos Céus e da Terra",
+        category: "character",
+        icon: "images/icons/character/jin_gow.png", 
         stats: {buff: 10},
     },
     { 
@@ -2269,28 +2276,28 @@ window.buffsData = [
         name: "Byet",
         category: "character",
         icon: "images/icons/character/byet.png", 
-        stats: {buff: 3}  
+        stats: {mult_buff: 3}  
     },
     { 
         id: "hy", 
         name: "Hy",
         category: "character",
         icon: "images/icons/character/hy.png", 
-        stats: {buff: 3}  
+        stats: {mult_buff: 3}  
     },
     { 
         id: "het", 
         name: "Het",
         category: "character",
         icon: "images/icons/character/het.png", 
-        stats: {buff: 3}  
+        stats: {mult_buff: 3}  
     },
     { 
         id: "domination", 
         name: "Domínio",
         category: "character",
         icon: "images/icons/character/domination.png", 
-        stats: {buff: 5}  
+        stats: {buff: 7}  
     },
     { 
         id: "taint", 
@@ -2304,7 +2311,7 @@ window.buffsData = [
         name: "Subjugar",
         category: "character",
         icon: "images/icons/character/overpower.png", 
-        stats: {buff: 5}  
+        stats: {mult_buff: 3}  
     },
     { 
         id: "standby", 
@@ -2318,7 +2325,7 @@ window.buffsData = [
         name: "Módulo de Ativação de Habilidade Nv2",
         category: "character",
         icon: "images/icons/character/module.png", 
-        stats: {buff: 5}  
+        stats: {mult_buff: 5} 
     },
     { 
         id: "brilliant_dash_buff", 
@@ -2383,7 +2390,7 @@ window.buffsData = [
         name: "Vai! Luffy!",
         category: "character",
         icon: "images/icons/character/go_luffy.png", 
-        stats: {buff: 5}  
+        stats: {mult_buff: 5}  
     },
     { 
         id: "ruin_blade1", 
@@ -2445,6 +2452,17 @@ window.buffsData = [
         category: "defense",
         icon: "images/icons/defense/amplifying.png", 
         stats: {ignore_def: 5}  
+    },
+    { 
+        id: "void_resonance", 
+        name: "Vazio Ressonante",
+        category: "defense",
+        icon: "images/icons/defense/void_resonance.png", 
+        stats: [
+            { ignore_def: 10},
+            { ignore_def: 15},
+        ] ,
+        maxStacks:2
     },
     { 
         id: "fear", 
@@ -2556,6 +2574,13 @@ window.buffsData = [
         name: "Vazio: Enfraquecer",
         category: "defense",
         icon: "images/icons/defense/void_weaken.png", 
+        stats: {ignore_def: 10}  
+    },
+    { 
+        id: "domination_weaken", 
+        name: "Domínio: Enfraquecer",
+        category: "defense",
+        icon: "images/icons/defense/domination_weaken.png", 
         stats: {ignore_def: 5}  
     },
     { 

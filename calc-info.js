@@ -38,14 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="info-section">
-                <h3 class="info-title" style="color:#F2F4F4;">[Níveis]</h3>
-                <ul class="info-list">
-                    <li>Em <b class="highlight-yellow">Nível do personagem</b> você irá inserir o nível do seu personagem. Não é o chase level!</li>
-                    <li>Em <b class="highlight-yellow">Nível do monstro</b> você irá inserir o nível do monstro. Os monstros da tabela de inimigos são considerados nível 90 automaticamente.</li>
-                </ul>
-            </div>
-
-            <div class="info-section">
                 <h3 class="info-title" style="color: #FFB347;">[Status]</h3>
                 <ul class="info-list">
                     <li>Aqui você irá inserir os valores de status do seu personagem.</li>
@@ -71,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><b class="highlight-yellow">Ataque pelas costas:</b> Se não marcar a caixa, será usado apenas o valor base do jogo (30%).</li>
                     <li><b class="highlight-yellow">Outros buffs:</b> Soma de buffs extras que não estejam presentes na janela de buffs (Botão +).</li>
                     <li><b class="highlight-yellow">Debuffs de quebrar defesa:</b> Soma de debuffs que não estejam presentes na janela de debuffs (Botão +).</li>
+                    <li><b class="highlight-yellow">Buffs Aditivos:</b> Todos os buffs aditivos são somados antes de entrar no dano final.</li>
+                    <li><b class="highlight-yellow">Buffs Multiplicativos:</b> Todos os buffs multiplicativos são multiplicados entre si e atuam diretamente no dano final.</li>
                 </ul>
             </div>
 

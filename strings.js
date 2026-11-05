@@ -27,8 +27,6 @@ const stringNoFreeze = "<div class='paralyze'><img src='/assets/icons/calculator
 
 // historyListStrings
 const stringsHistoryListTitle = "Histórico de Cálculos";
-const stringsHistoryListCharacterLevel = "Nível do personagem";
-const stringsHistoryListMonsterLevel = "Nível do monstro";
 const stringsHistoryListAttack = "Ataque";
 const stringsHistoryListSpecialAttack = "Ataque especial";
 const stringHistoryListCriticalRate = "Chance de crítico";
@@ -38,7 +36,8 @@ const stringsHistoryListHarrierResistance = "Resist. Contaminação";
 const stringsHistoryListASD = "Dano de todas as habilidades";
 const stringsHistoryListPola = "Dano ao atacar / ser atacado";
 const stringsHistoryListBossDmg = "Dano causado a chefes";
-const stringsHistoryListBuffs = "Outros buffs";
+const stringsHistoryListBuffs = "Outros buffs (A)";
+const stringsHistoryListBuffsMult = "Outros buffs (M)";
 const stringsHistoryListBAtk = "Ataque pelas costas";
 const stringsHistoryListDamageValue = "Dano base";
 const stringsHistoryListDef = "Debuffs de defesa";
