@@ -2229,11 +2229,7 @@ window.buffsData = [
         name: "Bênção Nv2",
         category: "character",
         icon: "images/icons/character/bless2.png", 
-        stats: [
-            { buff: 1 },
-            { buff: 2 },
-            { buff: 3 }
-        ],
+        stats: { buff: 1 },
         maxStacks: 3
     },
     { 
@@ -2339,7 +2335,6 @@ window.buffsData = [
         name: "Superaquecimento",
         category: "character",
         icon: "images/icons/character/overheat1.png", 
-        stats: {buff: 5},
         stats: [
             { buff: 1 },
             { buff: 2 },
@@ -2665,13 +2660,6 @@ window.buffsData = [
         category: "resist",
         icon: "images/monsters/red_aura.png", 
         stats: {resist_normal: -90}  
-    },
-    { 
-        id: "ereb_resist", 
-        name: "Acúmulo de Energia - Ereb",
-        category: "resist",
-        icon: "images/icons/resist/ereb_resist.jpg", 
-        stats: {resist_all: -50}  
     },
     
 ];

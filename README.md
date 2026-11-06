@@ -6,11 +6,11 @@ The mathematical model for the damage formula was obtained using the Least Squar
 
 All notable changes to this project will be documented in this file (from Jan 14th, 2024 on).
 
-
 ## [v2.0.2] - November 5th, 2026
 
 - Added new Unleashed buffs;
-- Added new multiplicative buffs
+- Added new multiplicative buffs;
+- Removed enemy/character level
 
 ## [v2.0.1] - July 3rd, 2026
 
